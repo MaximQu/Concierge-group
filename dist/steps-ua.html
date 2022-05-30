@@ -37,19 +37,22 @@
    <meta property="og:image:alt" content="Concierge group">
    <meta property="og:description" content="КЛУБ ЭЛИТНЫХ ЗНАКОМСТВ"/>
    <!-- Title -->
-   <title>Заходи</title>
+   <title>Крок 1</title>
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
    <script src="https://mssg.me/widget/conciergegroup.org" async></script>
    <script src="assets/js/app.js" type="module"></script>
 </head>
 <body>
-   <header class="header page">
+   <header class="header">
       <div class="header__inner">
-         <a href="index.html" class="logo__link">
+         <a href="https://conciergegroup.org" class="logo__link">
             <img src="assets/images/logo/logo.svg" alt="Concierge Group" class="logo__img">
          </a>
-         <span class="header__title header__title header__title--page">ІВЕНТ КОНСЬЕРЖ</span>
-         <button class="header__btn btn open-modal" type="button">Замовити доступ до заходу</button>
+         <span class="header__title">Клуб Елітних Знайомств</span>
+         <div class="header__wrapp">
+            <a href="steps-ua.html" class="header__btn header__btn--page header__btn--yellow btn">Стати учасником клубу</a>
+            <a href="questionnaire-ua.html" class="header__btn header__btn--page btn">Стати моделлю</a>
+         </div>
          <div class="header-contact">
             <div class="header-contact__links">
                <a href="mailto:info@conciergegroup.org" class="header-contact__link">info@conciergegroup.org</a>
@@ -231,414 +234,76 @@
       </div>
    </header>
    <main class="main">
-      <!-- hero -->
-      <section class="hero">
+      <!-- steps -->
+      <section class="steps">
          <div class="container">
-            <div class="hero__inner">
-               <h1 class="hero__title">ІВЕНТ КОНСЬЕРЖ</h1>
-               <p class="hero__subtitle">тури / концерти / виставки / спортивні події / форуми</p>
-               <div class="slider-events swiper">
-                  <ul class="slider-events__list swiper-wrapper">
-                     <li class="slider-events__item swiper-slide">
-                        <div class="slider-events__wrapp">
-                           <picture>
-                              <source srcset="assets/images/slider/1.1.webp" type="image/webp">
-                              <source srcset="assets/images/slider/1.1.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/1.1.jpg" alt="Ексклюзивні заходи" width="1680" height="1119" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/1.2.webp" type="image/webp">
-                              <source srcset="assets/images/slider/1.2.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/1.2.jpg" alt="Ексклюзивні заходи" width="2486" height="1653" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/1.3.webp" type="image/webp">
-                              <source srcset="assets/images/slider/1.3.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/1.3.jpg" alt="Ексклюзивні заходи" width="3017" height="2012" />
-                          </picture>
-                        </div>
-                        <p class="slider-events__text">Ексклюзивні заходи з Consierge Group</p>
-                     </li>
-                     <li class="slider-events__item swiper-slide">
-                        <div class="slider-events__wrapp">
-                           <picture>
-                              <source srcset="assets/images/slider/2.1.webp" type="image/webp">
-                              <source srcset="assets/images/slider/2.1.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/2.1.jpg" alt="Грандіозні концерти та виставки" width="1600" height="901" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/2.2.webp" type="image/webp">
-                              <source srcset="assets/images/slider/2.2.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/2.2.jpg" alt="Грандіозні концерти та виставки" width="1600" height="900" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/2.3.webp" type="image/webp">
-                              <source srcset="assets/images/slider/2.3.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/2.3.jpg" alt="Грандіозні концерти та виставки" width="1200" height="798" />
-                          </picture>
-                        </div>
-                        <p class="slider-events__text">Грандіозні концерти та виставки по всьому світу</p>
-                     </li>
-                     <li class="slider-events__item swiper-slide">
-                        <div class="slider-events__wrapp">
-                           <picture>
-                              <source srcset="assets/images/slider/3.1.webp" type="image/webp">
-                              <source srcset="assets/images/slider/3.1.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/3.1.jpg" alt="Безліч спортивних подій" width="2850" height="1856" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/3.2.webp" type="image/webp">
-                              <source srcset="assets/images/slider/3.2.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/3.2.jpg" alt="Безліч спортивних подій" width="1200" height="800" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/3.3.webp" type="image/webp">
-                              <source srcset="assets/images/slider/3.3.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/3.3.jpg" alt="Безліч спортивних подій" width="3000" height="2149" />
-                          </picture>
-                        </div>
-                        <p class="slider-events__text">Безліч спортивних подій чекають на тебе</p>
-                     </li>
-                     <li class="slider-events__item swiper-slide">
-                        <div class="slider-events__wrapp">
-                           <picture>
-                              <source srcset="assets/images/slider/4.1.webp" type="image/webp">
-                              <source srcset="assets/images/slider/4.1.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/4.1.jpg" alt="Національно-культурні" width="1400" height="798" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/4.2.webp" type="image/webp">
-                              <source srcset="assets/images/slider/4.2.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/4.2.jpg" alt="Національно-культурні" width="1229" height="819" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/4.3.webp" type="image/webp">
-                              <source srcset="assets/images/slider/4.3.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/4.3.jpg" alt="Національно-культурні" width="1920" height="1152" />
-                          </picture>
-                        </div>
-                        <p class="slider-events__text">Національно-культурні шоу захоплюючі дух</p>
-                     </li>
-                  </ul>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button__wrapp">
-                     <div class="swiper-button swiper-button-prev">
-                        <svg>
-                           <use xlink:href="#arrow-left"></use>
-                        </svg>
-                     </div>
-                     <div class="swiper-button swiper-button-next">
-                        <svg>
-                           <use xlink:href="#arrow-right"></use>
-                        </svg>
-                     </div>
-                  </div>
+            <h1 class="steps__title">ЗАПОВНІТЬ ФОРМУ</h1>
+            <form  class="steps__form" id="stepsForm" translate="yes" data-form-member data-multi-step data-form-lang="ua">
+               <div class="form-alert" data-alert-input>
+                  <p>Заповніть необхідні поля</p>
+                  <div class="btn form-alert__btn">Окей</div>
                </div>
-            </div>
-         </div>
-      </section>
-      <!-- ./hero -->
-      <!-- advantages -->
-      <section class="advantages">
-         <div class="container">
-            <div class="advantages__inner">
-               <h2 class="advantages__title">Наші переваги</h2>
-               <ul class="advantages__list">
-                  <li class="advantages__item advantages__item--page">
-                     <img src="assets/images/advantages/advantages-1.svg" width="58" height="61" alt="Шанс побачити своїх фаворитів" class="advantages__img">
-                     <p class="advantages__text">Шанс побачити своїх фаворитів</p>
-                  </li>
-                  <li class="advantages__item advantages__item--page">
-                     <img src="assets/images/advantages/advantages-2.svg" width="69" height="69" alt="Шанс відвідати захід міжнародного рівня" class="advantages__img">
-                     <p class="advantages__text">Шанс відвідати захід міжнародного рівня</p>
-                  </li>
-                  <li class="advantages__item advantages__item--page">
-                     <img src="assets/images/advantages/advantages-3.svg" width="78" height="78" alt="Відвідайте безліч міст з найяскравішими подіями" class="advantages__img">
-                     <p class="advantages__text">Відвідайте безліч міст з найяскравішими подіями</p>
-                  </li>
-                  <li class="advantages__item advantages__item--page">
-                     <img src="assets/images/advantages/advantages-4.svg" width="80" height="67" alt="Отримайте преміальний доступ до подій" class="advantages__img">
-                     <p class="advantages__text">Отримайте преміальний доступ до подій</p>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </section>
-      <!-- ./advantages -->
-      <!-- tabs -->
-      <section class="tabs">
-         <div class="container">
-            <div class="tabs__body">
-               <ul class="tabs__list">
-                  <li class="tabs__item active" data-item="1">Події</li>
-                  <li class="tabs__item" data-item="2">Світові фестивалі</li>
-                  <li class="tabs__item" data-item="3">Популярні направлення</li>
-                  <li class="tabs__item" data-item="4">Заходи в містах</li>
-               </ul>
-               <div class="tabs__contents">
-                  <div class="tabs__content active" data-content="1">
-                     <p class="tabs__text">Разом з квитком Ви купуєте безліч додаткових бонусів: можливість побачити наживо свого улюбленого виконавця або групу, відвідати матч з регбі або футболу, на якому давно мріяли побувати, отримаєте шанс відвідати безліч міст, в яких проводяться найяскравіші та наймасштабніші заходи. Тури, концерти, спортивні турніри та матчі, змагання, що організовуються у всіх куточках світу, подарують Вас можливістю відвідати та побачити зсередини такі мегаполіси як Рим, Барселона, Лондон, Берлін,та, звичайно ж, Париж. Ви зможете не тільки стати глядачем та учасником заходів, але й ознайомитися з культурою країни, в якій вони проводяться. Квитки для себе та своїх друзів на найцікавіші міжнародні турніри, спортивні матчі, ексклюзивні концерти та фестивалі, історичні заходи можна знайти тут:
-      
-                     </p>
-                  </div>
-                  <div class="tabs__content" data-content="2">
-                     <p class="tabs__text">Разом з квитком Ви купуєте безліч додаткових бонусів: можливість побачити наживо свого улюбленого виконавця або групу, відвідати матч з регбі або футболу, на якому давно мріяли побувати, отримаєте шанс відвідати безліч міст, в яких проводяться найяскравіші та наймасштабніші заходи. Тури, концерти, спортивні турніри та матчі, змагання, що організовуються у всіх куточках світу, подарують Вас можливістю відвідати та побачити зсередини такі мегаполіси як Рим, Барселона, Лондон, Берлін,та, звичайно ж, Париж. Ви зможете не тільки стати глядачем та учасником заходів, але й ознайомитися з культурою країни, в якій вони проводяться. Квитки для себе та своїх друзів на найцікавіші міжнародні турніри, спортивні матчі, ексклюзивні концерти та фестивалі, історичні заходи можна знайти тут:
-      
-                     </p>
-                  </div>
-                  <div class="tabs__content" data-content="3">
-                     <p class="tabs__text">Разом з квитком Ви купуєте безліч додаткових бонусів: можливість побачити наживо свого улюбленого виконавця або групу, відвідати матч з регбі або футболу, на якому давно мріяли побувати, отримаєте шанс відвідати безліч міст, в яких проводяться найяскравіші та наймасштабніші заходи. Тури, концерти, спортивні турніри та матчі, змагання, що організовуються у всіх куточках світу, подарують Вас можливістю відвідати та побачити зсередини такі мегаполіси як Рим, Барселона, Лондон, Берлін,та, звичайно ж, Париж. Ви зможете не тільки стати глядачем та учасником заходів, але й ознайомитися з культурою країни, в якій вони проводяться. Квитки для себе та своїх друзів на найцікавіші міжнародні турніри, спортивні матчі, ексклюзивні концерти та фестивалі, історичні заходи можна знайти тут:
-      
-                     </p>
-                  </div>
-                  <div class="tabs__content" data-content="4">
-                     <p class="tabs__text">Разом з квитком Ви купуєте безліч додаткових бонусів: можливість побачити наживо свого улюбленого виконавця або групу, відвідати матч з регбі або футболу, на якому давно мріяли побувати, отримаєте шанс відвідати безліч міст, в яких проводяться найяскравіші та наймасштабніші заходи. Тури, концерти, спортивні турніри та матчі, змагання, що організовуються у всіх куточках світу, подарують Вас можливістю відвідати та побачити зсередини такі мегаполіси як Рим, Барселона, Лондон, Берлін,та, звичайно ж, Париж. Ви зможете не тільки стати глядачем та учасником заходів, але й ознайомитися з культурою країни, в якій вони проводяться. Квитки для себе та своїх друзів на найцікавіші міжнародні турніри, спортивні матчі, ексклюзивні концерти та фестивалі, історичні заходи можна знайти тут:
-                     </p>
-                  </div>
+               <div class="steps__pagination">
+                  <span class="steps__step active" data-step-num>Крок 1</span>
+                  <span class="steps__step" data-step-num>Крок 2</span>
                </div>
-            </div>
-         </div>
-      </section>
-      <!-- ./tabs -->
-      <!-- events -->
-      <section class="events">
-         <div class="container">
-            <div class="events__inner">
-               <div class="events__heading">
-                  <h2 class="events__title">EVENTS 2022</h2>
-                  <ul class="events__list">
-                     <li class="events__item active">
-                        <svg class="events__icon">
-                           <use xlink:href="#best"></use>
-                        </svg>
-                        <span class="events__text">Найкращі</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#culture"></use>
-                        </svg>
-                        <span class="events__text">Культура</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#fashion"></use>
-                        </svg>
-                        <span class="events__text">Мода</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#show"></use>
-                        </svg>
-                        <span class="events__text">Шоу</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#sport"></use>
-                        </svg>
-                        <span class="events__text">Спорт</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#business"></use>
-                        </svg>
-                        <span class="events__text">Бізнес</span>
-                     </li>
-                  </ul>
+               <div class="steps__wrapp steps__form--first" data-step>
+                  <input type="text" aria-label="Імя та прізвище" class="steps__input --req" id="name" name="name" placeholder="Імя та прізвище" autocomplete="name" >
+                  <input type="text" aria-label="Місто" class="steps__input" id="city" name="city" placeholder="Місто">
+                  <input type="email" aria-label="E-mail" class="steps__input --req" id="email" name="email" placeholder="E-mail" autocomplete="email">
+                  <input type="tel" aria-label="Телефон" class="steps__input tel --req" id="phone" name="phone" placeholder="Телефон (Мессенджер)" autocomplete="tel">
+                  <button type="button" class="steps__btn btn">Продовжити</button>
                </div>
-               <div class="events-search">
-                  <span class="events-search__suptitle">Пошук за ключовим словом</span>
-                  <div class="events-search__wrapp">
-                     <input type="search" class="events-search__input" placeholder="MTV Europe Music Awards">
-                     <input type="image" class="events-search__btn" src="assets/images/svg/search.svg" alt="Пошук за ключовим словом">
-                  </div>
-               </div>
-               <ul class="events-preview__list">
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Вена</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-1.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-1.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-1.jpg" alt="Венський оперний бал" class="events-preview__img" width="1300" height="869" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#culture"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Венський оперний бал</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Лондон</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-2.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-2.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-2.jpg" alt="Неділя моди в Лондоні" class="events-preview__img" width="1920" height="1080" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#fashion"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Неділя моди в Лондоні</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Ніца</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-3.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-3.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-3.jpg" alt="
-                           Карнавал у Ніцці" class="events-preview__img" width="1200" height="801" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#show"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Карнавал в Ніцці</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">ЕС</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-4.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-4.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-4.jpg" alt="Ліга Європи" class="events-preview__img" width="1920" height="1080" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#sport"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Ліга Європи</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Давос</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-5.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-5.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-5.jpg" alt="Всесвітній економічний форум" class="events-preview__img" width="2048" height="1236" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#business"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Всесвітній економічний форум</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Канни</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-6.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-6.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-6.jpg" alt="Каннський фестиваль" class="events-preview__img" width="1200" height="825" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#culture"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Каннський фестиваль</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#global"></use>
-                           </svg>
-                        </span>
-                        <picture>
-                           <source srcset="assets/images/events/events-7.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-7.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-7.jpg" alt="Показ мод Victoria’s Secret" class="events-preview__img" width="1200" height="792" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#fashion"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Показ мод Victoria’s Secret</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Лос-Анджеліс</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-8.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-8.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-8.jpg" alt="Премії Греммі" class="events-preview__img" width="1936" height="1089" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#culture"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Премії Греммі</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="event.html" class="events-preview__link">
-                        <span class="events-preview__mark">Доха</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-9.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-9.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-9.jpg" alt="Катар Мастерс" class="events-preview__img" width="1102" height="733" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#sport"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Катар Мастерс</h3>
-                        </div>
-                     </a>
-                  </li>
-               </ul>
-               <button type="button" class="events__btn btn">Показати більше</button>
-            </div>
-         </div>
-      </section>
-      <!-- ./events -->
-      <!-- request -->
-      <section class="request">
-         <div class="container">
-            <div class="request__inner">
-               <div class="request__content">
-                  <h2 class="request__title">Дізнайтесь про прийдешні заходи </h2>
-                  <p class="request__text">Не знайшли необхідний захід або бажаєте взяти участь у прийдешньому івенті?
-                     Залиште заявку та наші спеціалісти знайдусь та організують захід з урахуванням усіх ваших потреб
+               <div class="steps__wrapp" data-step>
+                  <h1 class="steps__title title">Правила надання Клієнтам послуг супроводу (ескорт-послуг)</h1>
+                  <p class="steps__subtitle">Будь ласка ознайомтеся із правилами запропонованих послуг.</p>
+                  <p class="steps__text"> При замовленні у Приватного підприємства «Консьєрж Груп» (далі - Виконавець) послуг супроводу (ескорт-послуг) фізична особа (далі - Клієнт) бере на себе зобов'язання ознайомиться з Правилами надання Клієнтам послуг супроводу (ескорт-послуг) (далі - Правила) та невідступно дотримуватися їх.
                   </p>
-               </div>
-               <form class="request__form" data-form-request data-form-lang="ua">
-                  <div class="form-alert" data-alert-input>
-                     <p>Заповніть необхідні поля</span>
-                     <div class="btn form-alert__btn">Окей</div>
-                  </div>
-                  <div class="request__wrapp">
-                     <input type="text" aria-label="Имя" class="request__input --req" id="requestName" name="name" placeholder="Ім'я" autocomplete="name">
-                     <input type="tel" aria-label="Телефон" class="request__input tel --req" id="requestPhone" name="phone" placeholder="Телефон" autocomplete="tel">
-                     <input type="email" aria-label="E-mail" class="request__input _email --req" id="requestEmail" name="email" placeholder="E-mail" autocomplete="email">
-                  </div>
+                  <p class="steps__text">1. Під послугами супроводу (далі - Послуги, Ескорт-послуги) Клієнт і Виконавець мають на увазі: послуги з супроводу Клієнта на зустрічах, на відпочинку, у публічних місцях.
+                  </p>
+                  <p class="steps__text">2. Виконавець надає послуги Клієнту за допомогою спеціально навченої і підготовленої дівчини або хлопця (далі - Модель), яка (-ий) відповідає вимогам Клієнта.
+                  </p>
+                  <p class="steps__text">3. Для можливості ознайомлення зі списком Моделей і вибору Моделі для надання ескорт-послуг Клієнт повинен одноразово сплатити 2000,00 (дві тисяч) гривень. Надалі гроші не повертаються і у вартість ескорт-послуг не включаються.
+                  </p>
+                  <p class="steps__text">4. Послуги супроводу можуть бути надані тільки Клієнту. Не допускається надання послуг супроводу третім особам без узгодження з Виконавцем.
+                  </p>
+                  <p class="steps__text">5. Послуги супроводу надаються тільки в тому обсязі, в якому вони були замовлені у Виконавця. Обсяг надання послуг супроводу є замовлений Клієнтом час (в годинах), протягом якого йому будуть надаватися послуги. Клієнт не має права вимагати від Моделі надання ескорт-послуг у більшому обсязі, ніж було погоджено з Виконавцем в замовленні.
+                  </p>
+                  <p class="steps__text">6. Оплата послуг проводиться Клієнтом у вигляді передоплати в розмірі 100% від вартості послуг. При цьому Клієнт оплачує послуги безпосередньо Виконавцю в готівковій, безготівковій чи інший, узгодженій з Виконавцем формі. Не допускається передача грошових коштів Моделі.
+                  </p>
+                  <p class="steps__text">7. Виконавець ні в якому разі не надає послуги, що суперечать чинному законодавству України. У разі якщо в отриманому від Клієнта замовленні будуть наявні вимоги вчинити дії, передбачені ст. 181-1 Кодексу України про адміністративні порушення або ст. ст. 302, 303 Кримінального кодексу України, а саме вимоги надати послуги проституції, сутенерства або звідництва, таке замовлення буде неодмінно відхилене без пояснення причин.
+                  </p>
+                  <p class="steps__text">8. В процесі надання Клієнту ескорт-послуг Клієнт не має права пропонувати, схиляти або вимагати від Моделі надання послуг, що класифікуються законодавством як проституція. При виявленні фактів порушення Клієнтом цього правила, Виконавець залишає за собою право невідкладно припинити надання послуг Клієнту.
+                  </p>
+                  <p class="steps__text">9. Клієнт зобов'язаний вести себе по відношенню до Моделі ввічливо, дотримуватись загальноприйнятих етичних норм і моральних правил. Неприпустимо застосування грубості, будь-яких видів фізичного впливу на Модель. При виявленні фактів порушення Клієнтом цього правила, Виконавець залишає за собою право невідкладно припинити надання послуг Клієнту.
+                  </p>
+                  <p class="steps__text">10. Клієнт зобов'язаний нести всі витрати, які виникають у Моделі в процесі надання ескорт-послуг, в тому числі витрати на таксі, напої, їжу, квитки та інші витрати.
+                  </p>
+                  <p class="steps__text">11. Клієнт несе відповідальність за будь-який матеріальний збиток, який буде завдано Моделі під час надання ескорт-послуг.
+                  </p>
+                  <p class="steps__text">12. Надання ескорт-послуг може бути припинено в будь-який момент Виконавцем, без компенсації сплаченої вартості, в разі виявлення Виконавцем фактів порушення Клієнтом цих Правил та/або чинного законодавства України.
+                  </p>
+                  <p class="steps__text">13. У разі якщо Моделлю не було надано ескорт-послуги або послуги були надані не в повному обсязі/неякісно Клієнт зобов'язаний невідкладно повідомити про це Виконавця засобами телефонного зв'язку або електронною поштою. Клієнт в будь-якому випадку не має права пред'являти будь-які усні претензії Моделі.
+                  </p>
+                  <p class="steps__text">14. Інформація, яка стане доступна Клієнту в процесі надання йому ескорт-послуг, про Виконавця та/або про Модель є конфіденційною. Клієнт зобов'язується зберігати конфіденційність такої інформації. Клієнт несе відповідальність за будь-яку майнову і немайнову шкоду, яку буде завдано Виконавцю розголошенням інформації.</p>
+                  <p class="steps__text"> 15. Дані Правила є чинними і обов'язковими для Клієнта та Виконавця з моменту здійснення Клієнтом замовлення ескорт-послуг у Виконавця і до завершення надання послуг супроводу.</p>
+                  <p class="steps__text">16. Періодично Виконавець може вносити зміни в ці Правила шляхом публікації таких змін на веб-сайті Виконавця за адресою <a href="http://conciergegroup.org" target="_blank" rel="noopener noreferrer">http://conciergegroup.org</a>.
+                  </p>
+                  <p class="steps__text">17.Подальше використання послуг Виконавця означає беззастережне прийняття Клієнтом таких змін в Правила.</p>
                   <label class="check">
-                     <input class="check__input" type="checkbox" name="checkbox">
+                     <input class="check__input" type="checkbox" name="checkbox" >
                      <span class="check__box"></span>
-                     <span class="check__text">я погоджуюсь на обробку персональних данних</span>
+                     Я ознайомлений та згоден з умовами
                   </label>
-                  <button type="submit" class="request__btn btn" disabled data-send-btn>Відправити</button>
-               </form>
-            </div>
+                  <div class="steps__btns">
+                     <button type="button" data-previous class="steps__btn btn">Назад</button>
+                     <button type="submit" class="steps__btn btn" disabled data-send-btn>Оплатити доступ до клубу елітних знайомств — 99 USD</button>
+                  </div>
+               </div>
+            </form>
          </div>
       </section>
-      <!-- ./request -->
+      <!-- ./steps -->
    </main>
    <footer class="footer">
       <div class="container">
@@ -1874,7 +1539,7 @@
             </filter>
          </defs>
       </symbol>
-      <symbol id="best" viewBox="0 0 33 31">
+      <symbol id="best" viewBox="0 0 32 32">
          <path d="M16 32C7.17733 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 24.8227 24.8227 32 16 32ZM16 1.33333C7.91333 1.33333 1.33333 7.91333 1.33333 16C1.33333 24.0867 7.91333 30.6667 16 30.6667C24.0867 30.6667 30.6667 24.0867 30.6667 16C30.6667 7.91333 24.0867 1.33333 16 1.33333Z" fill="#9F5CC8"/>
          <path d="M23.1599 22.6665H8.83995C8.51461 22.6665 8.23728 22.4318 8.18261 22.1118L6.67595 13.2225C6.63461 12.9745 6.73461 12.7252 6.93461 12.5758C7.13461 12.4265 7.40128 12.3998 7.62795 12.5132L11.9546 14.6465L15.4159 8.34516C15.6493 7.92116 16.3506 7.92116 16.5839 8.34516L20.0453 14.6465L24.3719 12.5132C24.5973 12.3998 24.8653 12.4265 25.0653 12.5758C25.2653 12.7252 25.3666 12.9758 25.3239 13.2225L23.8173 22.1118C23.7626 22.4318 23.4839 22.6665 23.1599 22.6665ZM9.40395 21.3332H22.5973L23.7919 14.2852L20.0639 16.1238C19.7426 16.2838 19.3559 16.1598 19.1853 15.8478L15.9999 10.0505L12.8159 15.8478C12.6453 16.1598 12.2599 16.2838 11.9373 16.1238L8.20928 14.2852L9.40395 21.3332Z" fill="#9F5CC8"/>
       </symbol>

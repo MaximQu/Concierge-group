@@ -37,7 +37,7 @@
    <meta property="og:image:alt" content="Concierge group">
    <meta property="og:description" content="КЛУБ ЭЛИТНЫХ ЗНАКОМСТВ"/>
    <!-- Title -->
-   <title>Главная</title>
+   <title>Шаг 1</title>
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
    <script src="https://mssg.me/widget/conciergegroup.org" async></script>
    <script src="assets/js/app.js" type="module"></script>
@@ -234,208 +234,70 @@
       </div>
    </header>
    <main class="main">
-      <!-- hero -->
-      <section class="hero">
+      <!-- steps -->
+      <section class="steps">
          <div class="container">
-            <div class="hero__inner">
-               <h1 class="hero__title">КЛУБ ЭЛИТНЫХ ЗНАКОМСТВ</h1>
-               <p class="hero__subtitle">встречи / сопровождение / путешествия / свидания /</p>
-               <div class="slider swiper">
-                  <ul class="slider__list swiper-wrapper">
-                     <li class="slider__item swiper-slide">
-                        <picture>
-                           <source srcset="assets/images/slider/slider-1_m.webp 1x, assets/images/slider/slider-1_b.webp 2x" type="image/webp">
-                           <img src="assets/images/slider/slider-1_m.webp" srcset="assets/images/slider/slider-1_b.jpg 2x" width="1920" height="1280" alt="Пары" class="slider__img">
-                        </picture>
-                        <div class="slider__feedback">
-                           <span class="slider__name">Джон и Ольга</span>
-                           <p class="slider__text">Благодаря Клубу Элитных знакомств я встретил Марию, которая готова отправиться со мной в любое путишествие</p>
-                        </div>
-                        <span class="slider__mark">150+ удачно созданых пар</span>
-                     </li>
-                     <li class="slider__item swiper-slide">
-                        <picture>
-                           <source srcset="assets/images/slider/slider-2_m.webp 1x, assets/images/slider/slider-2_b.webp 2x" type="image/webp">
-                           <img src="assets/images/slider/slider-2_m.webp" srcset="assets/images/slider/slider-2_b.jpg 2x" width="1920" height="1280" alt="Пары" class="slider__img">
-                        </picture>
-                        <div class="slider__feedback">
-                           <span class="slider__name">Девид и Кристина</span>
-                           <p class="slider__text">В Клубе Элитных знакомств я нашла свою сторую половинку и с первого дня поняли что мы созданы друг для друга</p>
-                        </div>
-                        <span class="slider__mark white">150+ удачно созданых пар</span>
-                     </li>
-                     <li class="slider__item swiper-slide changed">
-                        <picture>
-                           <source srcset="assets/images/slider/slider-3_m.webp 1x, assets/images/slider/slider-3_b.webp 2x" type="image/webp">
-                           <img src="assets/images/slider/slider-3_m.webp" srcset="assets/images/slider/slider-3_b.jpg 2x" width="1920" height="1081" alt="Пары" class="slider__img">
-                        </picture>
-                        <div class="slider__feedback">
-                           <span class="slider__name white">Томас и Ангелина</span>
-                           <p class="slider__text white">Для Клуба Элитных знакомств нет ничего невозможного, знакомствов других странах и туризм — идеально сочетание</p>
-                        </div>
-                        <span class="slider__mark white">150+ удачно созданых пар</span>
-                     </li>
-                     <li class="slider__item swiper-slide">
-                        <picture>
-                           <source srcset="assets/images/slider/slider-4_m.webp 1x, assets/images/slider/slider-4_b.webp 2x" type="image/webp">
-                           <img src="assets/images/slider/slider-4_m.webp" srcset="assets/images/slider/slider-4_b.jpg 2x" width="2500" height="1667" alt="Пары" class="slider__img">
-                        </picture>
-                        <div class="slider__feedback">
-                           <span class="slider__name">Эдди и Ольга</span>
-                           <p class="slider__text">В Клубе Элитных знакомств я нашел замечательную девушку которая разделяет мои интересы и увлечения
-                           </p>
-                        </div>
-                        <span class="slider__mark white">150+ удачно созданых пар</span>
-                     </li>
-                     <li class="slider__item swiper-slide">
-                        <picture>
-                           <source srcset="assets/images/slider/slider-5_m.webp 1x, assets/images/slider/slider-5_b.webp 2x" type="image/webp">
-                           <img src="assets/images/slider/slider-5_m.webp" srcset="assets/images/slider/slider-5_b.jpg 2x" width="2500" height="1669" alt="Пары" class="slider__img">
-                        </picture>
-                        <div class="slider__feedback">
-                           <span class="slider__name">Роберт и Елена</span>
-                           <p class="slider__text">Клуб Элитных знакомств исполняет мечты для тех тех кто исчет свою вторую половинку
-                           </p>
-                        </div>
-                        <span class="slider__mark white">150+ удачно созданых пар</span>
-                     </li>
-                  </ul>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button__wrapp">
-                     <div class="swiper-button swiper-button-prev"></div>
-                     <div class="swiper-button swiper-button-next"></div>
+            <h1 class="steps__title">ЗАПОЛНИТЕ ФОРМУ</h1>
+            <form method="post" class="steps__form" id="stepsForm" translate="yes" data-form-member data-multi-step ata-form-lang="ru">
+               <div class="form-alert" data-alert-input>
+                  <p>Заполните обязательные поля</p>
+                  <div class="btn form-alert__btn">Окей</div>
+               </div>
+               <div class="steps__pagination">
+                  <span class="steps__step active" data-step-num>Шаг 1</span>
+                  <span class="steps__step" data-step-num>Шаг 2</span>
+               </div>
+               <div class="steps__wrapp steps__form--first" data-step>
+                  <input type="text" aria-label="Имя и Фамилия" class="steps__input --req" id="name" name="name" placeholder="Имя и Фамилия" autocomplete="name">
+                  <input type="text" aria-label="Город" class="steps__input" id="city" name="city" placeholder="Город">
+                  <input type="email" aria-label="E-mail" class="steps__input --req" id="email" name="email" placeholder="E-mail" autocomplete="email">
+                  <input type="tel" aria-label="Телефон" class="steps__input tel --req" id="phone" name="phone" placeholder="Телефон (Мессенджер)" autocomplete="tel">
+                  <button type="button" class="steps__btn btn">Продолжить</button>
+               </div>
+               <div class="steps__wrapp" data-step>
+                  <h1 class="steps__title title">ПРАВИЛА ОКАЗАНИЯ КЛИЕНТАМ УСЛУГ СОПРОВОЖДЕНИЯ (ЭСКОРТ-УСЛУГ)</h1>
+                  <p class="steps__subtitle">Пожалуйста, ознакомьтесь с правилами предоставления услуг.</p>
+                  <p class="steps__text">Направив Частному предприятию «Консьерж Групп» (далее – Исполнитель) заявку на предоставление доступа к анкетам Клуба элитных знакомств (далее - Клуб), физическое лицо (далее – Клиент) берет на себя обязательства ознакомится с данными Правилами Клуба элитных знакомств (далее – Правила) и неотступно придерживаться их.
+                  </p>
+                  <p class="steps__text">1. Исполнитель оказывает Клиенту следующие услуги: услуги по предоставлению Клиенту информации (в виде анкет) о других членах Клуба, услуги по размещению информации о Клиенте (в виде анкеты) в каталоге членов Клуба, услуги по организации встреч с другими членами Клуба.
+                  </p>
+                  <p class="steps__text">2. Для получения доступа к анкетам Клуба Клиент должен заполнить форму заявки, которая размещена на сайте Исполнителя и одноразово уплатить 2 000,00 (две тысячи) гривен. Впоследствии деньги не возвращаются.
+                  </p>
+                  <p class="steps__text">3. Оплата других услуг производится Клиентом в виде предоплаты в размере 100 % от стоимости услуг. Клиент оплачивает услуги Исполнителю в наличной, безналичной или другой, согласованной с Исполнителем форме.
+                  </p>
+                  <p class="steps__text">4. После оплаты сумы, определенной в п. 2 настоящих Правил, Исполнитель направляет Клиенту ссылку на Интернет-каталог анкет других членов Клуба. После отправки ссылки Клиенту Исполнитель не несет ответственности в случае, если Клиент не сможет получить доступ к анкетам Клуба по техническим причинам, которые не зависят от Исполнителя.
+                  </p>
+                  <p class="steps__text">5. Направив заявку на получение доступа к анкетам членов Клуба, Клиент предоставляет Исполнителю свое безоговорочное согласие на сбор, обработку, хранение и передачу своих персональных в соответствии с требованиями Закона Украины «О защите персональных данных».
+                  </p>
+                  <p class="steps__text">6. Исполнитель ни в коем случае не предоставляет услуги, противоречащие действующему законодательству Украины. В случае если в полученной от Клиента заявке будут иметься требования совершить действия, предусмотренные ст. 181-1 Кодекса Украины про административные нарушения или ст. 302, 303 Уголовного кодекса Украины, а именно требования оказать услуги проституции, сутенерства или сводничества, такая заявка будет непременно отклонен без объяснения причин.
+                  </p>
+                  <p class="steps__text">7. По желанию Клиента Исполнитель может организовать для Клиента встречу с другим членом Клуба, выбранным Клиентом из каталога анкет членов Клуба. Во время такой встречи Клиент обязан вести себя по отношению к другому члену Клуба вежливо, соблюдать общепринятые этические нормы и моральные правила. Недопустимо применение грубости, любых видов физического воздействия по отношению к другому члену Клуба. При выявлении фактов нарушения Клиентом этого правила, Исполнитель оставляет за собой право безотлагательно прекратить предоставление услуг Клиенту и лишить его доступа к анкетам других членов Клуба.
+                  </p>
+                  <p class="steps__text">8. Во время встречи с другим членом Клуба, Клиент обязан нести все расходы, которые у другого члена Клуба, в том числе расходы на такси, напитки, еду, билеты и другие расходы. Клиент несет ответственность за любой материальный ущерб, который будет нанесен другому члену Клуба во время встречи.
+                  </p>
+                  <p class="steps__text">9. Встреча с другим членом Клуба может быть прекращена в любой момент Исполнителем, без компенсации денежных средств, уплаченных Клиентом за организацию такой встречи, в случае выявления Исполнителем фактов нарушения Клиентом настоящих Правил и/или действующего законодательства Украины.
+                  </p>
+                  <p class="steps__text">10. Информация, которая станет доступна Клиенту в процессе предоставления ему услуг, о Исполнителе и/или о других членах Клуба является конфиденциальной. Клиент обязуется сохранять конфиденциальность такой информации. Клиент несет ответственность за любой и имущественный и неимущественные вред, который будет нанесен Исполнителю разглашением информации.
+                  </p>
+                  <p class="steps__text">11. Настоящие Правила действуют и являются обязательными для Клиента и Исполнителя с момента осуществления Клиентом заявки на получение доступа к анкетам Клуба и до завершения предоставления услуг.
+                  </p>
+                  <p class="steps__text">12. Периодически Исполнитель может вносить изменения в настоящие Правила путем публикации таких изменений на веб-сайте Исполнителя по адресу <a href="http://conciergegroup.org" target="_blank" rel="noopener noreferrer">http://conciergegroup.org</a>.
+                  </p>
+                  <p class="steps__text">13. Дальнейшее использование услуг Исполнителя означает безоговорочное принятие Клиентом таких изменений в Правила.</p>
+                  <label class="check">
+                     <input class="check__input" type="checkbox" name="checkbox" >
+                     <span class="check__box"></span>
+                     Я ознакомлен и согласен с условиями
+                  </label>
+                  <div class="steps__btns">
+                     <button type="button" data-previous class="steps__btn btn">Назад</button>
+                     <button type="submit" class="steps__btn btn" disabled data-send-btn>Оплатить доступ в клуб элитных знакомств — 99 USD</button>
                   </div>
                </div>
-            </div>
+            </form>
          </div>
       </section>
-      <!-- ./hero -->
-      <!-- advantages -->
-      <section class="advantages">
-         <div class="container">
-            <div class="advantages__inner">
-               <h2 class="advantages__title">Наши преимущества</h2>
-               <ul class="advantages__list">
-                  <li class="advantages__item">
-                     <img src="assets/images/advantages/advantages-1.svg" width="80" height="80" alt="11 лет организации наилучших знакомств" class="advantages__img">
-                     <p class="advantages__text">11 лет организации наилучших знакомств</p>
-                  </li>
-                  <li class="advantages__item">
-                     <img src="assets/images/advantages/advantages-2.svg" width="86" height="77" alt="Более 300 анкет учасников клуба" class="advantages__img">
-                     <p class="advantages__text">Более 300 анкет учасников клуба</p>
-                  </li>
-                  <li class="advantages__item">
-                     <img src="assets/images/advantages/advantages-3.svg" width="78" height="78" alt="Более 50 задействованных стран" class="advantages__img">
-                     <p class="advantages__text">Более 50 задействованных стран</p>
-                  </li>
-                  <li class="advantages__item">
-                     <img src="assets/images/advantages/advantages-4.svg" width="74" height="79" alt="Более 30 ежедневных знакомств " class="advantages__img">
-                     <p class="advantages__text">Более 30 ежедневных знакомств </p>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </section>
-      <!-- ./advantages -->
-      <!-- offer -->
-      <section class="offer">
-         <div class="container">
-            <ul class="offer__list">
-               <li class="offer__item">
-                  <picture>
-                     <source srcset="assets/images/offers/offer-1.webp" type="image/webp">
-                     <img src="assets/images/offers/offer-1.webp" srcset="assets/images/offers/offer-1.jpg" width="1024" height="696" alt="Незабываемые свидания" class="offer__img">
-                  </picture>
-                  <div class="offer__wrapp">
-                     <h2 class="offer__title">Незабываемые свидания</h2>
-                     <p class="offer__text">Ужин при свечах на крыше ресторана, полет на воздушном шаре, конная прогулка или незабываемое путешествие на яхте - наша команда подберет лучшие предложения и поможет осуществить самые невероятные идеи. Все, что требуется от Вас, выбрать оптимальный вариант и наслаждаться незабываемым вечером в компании любимого человека.</p>
-                     <a href="steps.html" class="offer__btn btn">
-                        <span>Стать участником клуба элитных знакомств</span>
-                     </a>
-                  </div>
-               </li>
-               <li class="offer__item">
-                  <picture>
-                     <source srcset="assets/images/offers/offer-2.webp" type="image/webp">
-                     <img src="assets/images/offers/offer-2.webp" srcset="assets/images/offers/offer-2.jpg" width="1024" height="683" alt="Найти вторую половинку" class="offer__img">
-                  </picture>
-                  <div class="offer__wrapp">
-                     <h2 class="offer__title">Найти вторую половинку</h2>
-                     <p class="offer__text">Клуб Элитных Знакомств  поможет найти человека, который подойдет именно Вам. Достаточно озвучить Ваши пожелания и дать краткую характеристику своему будущему партнеру и наш специалист подберет для Вас необходимую кандидатуру и организует Ваше первое свидание.</p>
-                     <a href="steps.html" class="offer__btn btn">
-                        <span>Стать участником клуба элитных знакомств</span>
-                     </a>
-                  </div>
-               </li>
-               <li class="offer__item">
-                  <picture>
-                     <source srcset="assets/images/offers/offer-3.webp" type="image/webp">
-                     <img src="assets/images/offers/offer-3.webp" srcset="assets/images/offers/offer-3.jpg" width="1024" height="725" alt="Свидание со звездой" class="offer__img">
-                  </picture>
-                  <div class="offer__wrapp">
-                     <h2 class="offer__title">Свидание со звездой</h2>
-                     <p class="offer__text">Клуб Элитных Знакомств  организует для Вас персональную встречу со звездой кино, театра, музыкальной индустрии или спорта в романтическом месте и создаст атмосферу, которая будет располагать к диалогу. Мы гарантируем, что этот вечер подарит Вам незабываемые эмоции и яркие впечатления.</p>
-                     <a href="steps.html" class="offer__btn btn">
-                        <span>Стать участником клуба элитных знакомств</span>
-                     </a>
-                  </div>
-               </li>
-               <li class="offer__item">
-                  <picture>
-                     <source srcset="assets/images/offers/offer-4.webp" type="image/webp">
-                     <img src="assets/images/offers/offer-4.webp" srcset="assets/images/offers/offer-4.jpg" width="1024" height="682" alt="Знакомства и путешествия" class="offer__img">
-                  </picture>
-                  <div class="offer__wrapp">
-                     <h2 class="offer__title">Знакомства и путешествия</h2>
-                     <p class="offer__text">Вы хотите великолепно путешествовать и знакомиться? С нашей компанией вы получите индивидуально подобранные знакомство и романтический тур в соответствии со всеми Вашими желаниями и конечно, новые и приятные впечатления!</p>
-                     <a href="steps.html" class="offer__btn btn">
-                        <span>Стать участником клуба элитных знакомств</span>
-                     </a>
-                  </div>
-               </li>
-               <li class="offer__item">
-                  <picture>
-                     <source srcset="assets/images/offers/offer-5.webp" type="image/webp">
-                     <img src="assets/images/offers/offer-5.webp" srcset="assets/images/offers/offer-5.jpg" width="1024" height="682" alt="Бизнес сопрoвождение" class="offer__img">
-                  </picture>
-                  <div class="offer__wrapp">
-                     <h2 class="offer__title">Бизнес сопрoвождение</h2>
-                     <p class="offer__text">Клуб Элитных Знакомств  поможет Вам в организации деловых встреч, а также бизнес сопровождений. Мы поможем Вам подобрать высококвалифицированного приводчика, ассистента для проведения презентации или очаровательную спутницу на бизнес встречу. Бизнес- сопровождение дает шанс в короткие сроки подписать любой договор и во время переговоров позволит перевесить чашу весов именно в Вашу пользу!</p>
-                     <a href="steps.html" class="offer__btn btn">
-                        <span>Стать участником клуба элитных знакомств</span>
-                     </a>
-                  </div>
-               </li>
-               <li class="offer__item">
-                  <picture>
-                     <source srcset="assets/images/offers/offer-6.webp" type="image/webp">
-                     <img src="assets/images/offers/offer-6.webp" srcset="assets/images/offers/offer-6.jpg" width="1024" height="683" alt="Отправить цветы или подарок" class="offer__img">
-                  </picture>
-                  <div class="offer__wrapp">
-                     <h2 class="offer__title">Отправить цветы или подарок</h2>
-                     <p class="offer__text">Наш сервис базируется на индивидуальном подходе к каждому клиенту. Наши специалисты учитывают до мелочей вкусы и предпочтения Вашей второй половинки, помогает удивлять каждый раз по-новому. Мы предложим несколько вариантов сюрприза, подарка или букета для Вашей возлюбленной, которые составлены с учетом ее характера, привычек и желаний. Все, что требуется от Вас, выбрать оптимальный вариант.</p>
-                     <a href="steps.html" class="offer__btn btn">
-                        <span>Стать участником клуба элитных знакомств</span>
-                     </a>
-                  </div>
-               </li>
-            </ul>
-            <div class="offer-individual">
-               <div class="offer-individual__content">
-                  <picture>
-                     <source srcset="assets/images/offers/offer-7.webp" type="image/webp">
-                     <img src="assets/images/offers/offer-7.webp" srcset="assets/images/offers/offer-7.jpg" width="1920" height="1200" alt="Стать моделью" class="offer__img">
-                  </picture>
-                  <div class="offer__wrapp">
-                     <h2 class="offer__title">Стать моделью</h2>
-                     <p class="offer__text">Наша цель: привлечение профессиональных моделей для участия в Клубе Элитных Знакомст. Вас ждёт участие в элитных мероприятиях, сопровождение высокопоставленных лиц, множество новых знакомста и путишествия по всему миру.</p>
-                  </div>
-               </div>
-               <a href="questionnaire.html" class="offer__btn btn">Добавить анкету модели на рассмотрение</a>
-            </div>
-         </div>
-      </section>
-      <!-- ./offer -->
+      <!-- ./steps -->
    </main>
    <footer class="footer">
       <div class="container">
@@ -1671,7 +1533,7 @@
             </filter>
          </defs>
       </symbol>
-      <symbol id="best" viewBox="0 0 33 31">
+      <symbol id="best" viewBox="0 0 32 32">
          <path d="M16 32C7.17733 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 24.8227 24.8227 32 16 32ZM16 1.33333C7.91333 1.33333 1.33333 7.91333 1.33333 16C1.33333 24.0867 7.91333 30.6667 16 30.6667C24.0867 30.6667 30.6667 24.0867 30.6667 16C30.6667 7.91333 24.0867 1.33333 16 1.33333Z" fill="#9F5CC8"/>
          <path d="M23.1599 22.6665H8.83995C8.51461 22.6665 8.23728 22.4318 8.18261 22.1118L6.67595 13.2225C6.63461 12.9745 6.73461 12.7252 6.93461 12.5758C7.13461 12.4265 7.40128 12.3998 7.62795 12.5132L11.9546 14.6465L15.4159 8.34516C15.6493 7.92116 16.3506 7.92116 16.5839 8.34516L20.0453 14.6465L24.3719 12.5132C24.5973 12.3998 24.8653 12.4265 25.0653 12.5758C25.2653 12.7252 25.3666 12.9758 25.3239 13.2225L23.8173 22.1118C23.7626 22.4318 23.4839 22.6665 23.1599 22.6665ZM9.40395 21.3332H22.5973L23.7919 14.2852L20.0639 16.1238C19.7426 16.2838 19.3559 16.1598 19.1853 15.8478L15.9999 10.0505L12.8159 15.8478C12.6453 16.1598 12.2599 16.2838 11.9373 16.1238L8.20928 14.2852L9.40395 21.3332Z" fill="#9F5CC8"/>
       </symbol>

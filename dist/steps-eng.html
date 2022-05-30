@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
    <meta charset="UTF-8">
    <!-- Style -->
@@ -37,19 +37,22 @@
    <meta property="og:image:alt" content="Concierge group">
    <meta property="og:description" content="КЛУБ ЭЛИТНЫХ ЗНАКОМСТВ"/>
    <!-- Title -->
-   <title>Мероприятия</title>
+   <title>Step 1</title>
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
    <script src="https://mssg.me/widget/conciergegroup.org" async></script>
    <script src="assets/js/app.js" type="module"></script>
 </head>
 <body>
-   <header class="header page">
+   <header class="header">
       <div class="header__inner">
-         <a href="index.html" class="logo__link">
+         <a href="https://conciergegroup.org" class="logo__link">
             <img src="assets/images/logo/logo.svg" alt="Concierge Group" class="logo__img">
          </a>
-         <span class="header__title header__title--page">Событийний консьерж</span>
-         <button class="header__btn btn open-modal" type="button">Заказать доступ на мероприятие</button>
+         <span class="header__title">Elite Dating Club</span>
+         <div class="header__wrapp">
+            <a href="steps-eng.html" class="header__btn header__btn--page header__btn--yellow btn">Become elite member</a>
+            <a href="questionnaire-eng.html" class="header__btn header__btn--page btn">Become a model</a>
+         </div>
          <div class="header-contact">
             <div class="header-contact__links">
                <a href="mailto:info@conciergegroup.org" class="header-contact__link">info@conciergegroup.org</a>
@@ -77,7 +80,7 @@
                   </div>
                </div>
                <div class="contact__block">
-                  <span class="header-contact__link header-contact__link--more more">Больше контактов</span>
+                  <span class="header-contact__link header-contact__link--more more">More contacts</span>
                   <ul class="contact__list">
                      <li class="contact__item">
                         <div class="social">
@@ -231,409 +234,78 @@
       </div>
    </header>
    <main class="main">
-      <!-- hero -->
-      <section class="hero">
+      <!-- steps -->
+      <section class="steps">
          <div class="container">
-            <div class="hero__inner">
-               <h1 class="hero__title">СОБЫТИЙНЫЙ КОНСЬЕРЖ</h1>
-               <p class="hero__subtitle">туры / концерты / выставки /спортивные мероприятия / форумы</p>
-               <div class="slider-events swiper">
-                  <ul class="slider-events__list swiper-wrapper">
-                     <li class="slider-events__item swiper-slide">
-                        <div class="slider-events__wrapp">
-                           <picture>
-                              <source srcset="assets/images/slider/1.1.webp" type="image/webp">
-                              <source srcset="assets/images/slider/1.1.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/1.1.jpg" alt="Эксклюзивные мероприятия" width="1680" height="1119" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/1.2.webp" type="image/webp">
-                              <source srcset="assets/images/slider/1.2.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/1.2.jpg" alt="Эксклюзивные мероприятия" width="2486" height="1653" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/1.3.webp" type="image/webp">
-                              <source srcset="assets/images/slider/1.3.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/1.3.jpg" alt="Эксклюзивные мероприятия" width="3017" height="2012" />
-                          </picture>
-                        </div>
-                        <p class="slider-events__text">Эксклюзивные мероприятия с Consierge Group</p>
-                     </li>
-                     <li class="slider-events__item swiper-slide">
-                        <div class="slider-events__wrapp">
-                           <picture>
-                              <source srcset="assets/images/slider/2.1.webp" type="image/webp">
-                              <source srcset="assets/images/slider/2.1.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/2.1.jpg" alt="Грандиозные концерты и виставки" width="1600" height="901" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/2.2.webp" type="image/webp">
-                              <source srcset="assets/images/slider/2.2.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/2.2.jpg" alt="Грандиозные концерты и виставки" width="1600" height="900" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/2.3.webp" type="image/webp">
-                              <source srcset="assets/images/slider/2.3.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/2.3.jpg" alt="Грандиозные концерты и виставки" width="1200" height="798" />
-                          </picture>
-                        </div>
-                        <p class="slider-events__text">Грандиозные концерты и виставки по всему миру</p>
-                     </li>
-                     <li class="slider-events__item swiper-slide">
-                        <div class="slider-events__wrapp">
-                           <picture>
-                              <source srcset="assets/images/slider/3.1.webp" type="image/webp">
-                              <source srcset="assets/images/slider/3.1.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/3.1.jpg" alt="Множество спортивных событий" width="2850" height="1856" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/3.2.webp" type="image/webp">
-                              <source srcset="assets/images/slider/3.2.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/3.2.jpg" alt="Множество спортивных событий" width="1200" height="800" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/3.3.webp" type="image/webp">
-                              <source srcset="assets/images/slider/3.3.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/3.3.jpg" alt="Множество спортивных событий" width="3000" height="2149" />
-                          </picture>
-                        </div>
-                        <p class="slider-events__text">Множество спортивных событий ждут тебя</p>
-                     </li>
-                     <li class="slider-events__item swiper-slide">
-                        <div class="slider-events__wrapp">
-                           <picture>
-                              <source srcset="assets/images/slider/4.1.webp" type="image/webp">
-                              <source srcset="assets/images/slider/4.1.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/4.1.jpg" alt="Национально-культурные шоу" width="1400" height="798" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/4.2.webp" type="image/webp">
-                              <source srcset="assets/images/slider/4.2.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/4.2.jpg" alt="Национально-культурные шоу" width="1229" height="819" />
-                          </picture>
-                          <picture>
-                              <source srcset="assets/images/slider/4.3.webp" type="image/webp">
-                              <source srcset="assets/images/slider/4.3.jpg" type="image/jpeg">
-                              <img class="slider-events__img" src="assets/images/slider/4.3.jpg" alt="Национально-культурные шоу" width="1920" height="1152" />
-                          </picture>
-                        </div>
-                        <p class="slider-events__text">Национально-культурные шоу захватывающие дух</p>
-                     </li>
-                  </ul>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button__wrapp">
-                     <div class="swiper-button swiper-button-prev">
-                        <svg>
-                           <use xlink:href="#arrow-left"></use>
-                        </svg>
-                     </div>
-                     <div class="swiper-button swiper-button-next">
-                        <svg>
-                           <use xlink:href="#arrow-right"></use>
-                        </svg>
-                     </div>
-                  </div>
+            <h1 class="steps__title">FILL THE FORM</h1>
+            <form class="steps__form" id="stepsForm" translate="yes" data-form-member data-multi-step data-form-lang="eng">
+               <div class="form-alert" data-alert-input>
+                  <p>Fill in the required fields</p>
+                  <div class="btn form-alert__btn">Окey</div>
                </div>
-            </div>
-         </div>
-      </section>
-      <!-- ./hero -->
-      <!-- advantages -->
-      <section class="advantages">
-         <div class="container">
-            <div class="advantages__inner">
-               <h2 class="advantages__title">Наши преимущества</h2>
-               <ul class="advantages__list">
-                  <li class="advantages__item advantages__item--page">
-                     <img src="assets/images/advantages/advantages-1.svg" width="58" height="61" alt="Возможность увидеть своих фаворитов" class="advantages__img">
-                     <p class="advantages__text">Возможность увидеть своих фаворитов</p>
-                  </li>
-                  <li class="advantages__item advantages__item--page">
-                     <img src="assets/images/advantages/advantages-2.svg" width="69" height="69" alt="Шанс посетить событие международного уровня" class="advantages__img">
-                     <p class="advantages__text">Шанс посетить событие международного уровня</p>
-                  </li>
-                  <li class="advantages__item advantages__item--page">
-                     <img src="assets/images/advantages/advantages-3.svg" width="78" height="78" alt="Посетите множество городов с самыми яркими  мероприятиями" class="advantages__img">
-                     <p class="advantages__text">Посетите множество городов с самыми яркими  мероприятиями</p>
-                  </li>
-                  <li class="advantages__item advantages__item--page">
-                     <img src="assets/images/advantages/advantages-4.svg" width="80" height="67" alt="Получите премиальный доступ на мероприятия" class="advantages__img">
-                     <p class="advantages__text">Получите премиальный доступ на мероприятия</p>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </section>
-      <!-- ./advantages -->
-      <!-- tabs -->
-      <section class="tabs">
-         <div class="container">
-            <div class="tabs__body">
-               <ul class="tabs__list">
-                  <li class="tabs__item active" data-item="1">События</li>
-                  <li class="tabs__item" data-item="2">Фестивали мира</li>
-                  <li class="tabs__item" data-item="3">Популярные направления</li>
-                  <li class="tabs__item" data-item="4">Мероприятия в Городах</li>
-               </ul>
-               <div class="tabs__contents">
-                  <div class="tabs__content active" data-content="1">
-                     <p class="tabs__text">Вместе с билетом Вы приобретаете массу дополнительных бонусов: возможность увидеть вживую своего любимого исполнителя или группу, посетить матч по регби или футболу, на котором давно мечтали побывать, получаете шанс посетить множество городов, в которых проводятся самые яркие и масштабные мероприятия. Туры, концерты, спортивные турниры и матчи, соревнования, организуемые во всех уголках света, подарят Вам возможность посетить и увидеть изнутри такие мегаполисы как Рим, Барселона, Лондон, Берлин, Москва и, конечно же, Париж. Вы сможете не только стать зрителем и участником проводимых мероприятий, но и ознакомиться с культурой страны, в которой они проводится. Билеты для себя и своих друзей на самые интересные интернациональные турниры, спортивные матчи, эксклюзивные концерты и фестивали, исторические мероприятия можно найти здесь:
-                     </p>
-                  </div>
-                  <div class="tabs__content" data-content="2">
-                     <p class="tabs__text">Вместе с билетом Вы приобретаете массу дополнительных бонусов: возможность увидеть вживую своего любимого исполнителя или группу, посетить матч по регби или футболу, на котором давно мечтали побывать, получаете шанс посетить множество городов, в которых проводятся самые яркие и масштабные мероприятия.
-                     </p>
-                  </div>
-                  <div class="tabs__content" data-content="3">
-                     <p class="tabs__text">Вместе с билетом Вы приобретаете массу дополнительных бонусов: возможность увидеть вживую своего любимого исполнителя или группу, посетить матч по регби или футболу, на котором давно мечтали побывать, получаете шанс посетить множество городов, в которых проводятся самые яркие и масштабные мероприятия. Туры, концерты, спортивные турниры и матчи, соревнования, организуемые во всех уголках света, подарят Вам возможность посетить и увидеть изнутри такие мегаполисы как Рим, Барселона, Лондон, Берлин, Москва и, конечно же, Париж.
-                     </p>
-                  </div>
-                  <div class="tabs__content" data-content="4">
-                     <p class="tabs__text">Вместе с билетом Вы приобретаете массу дополнительных бонусов: возможность увидеть вживую своего любимого исполнителя или группу, посетить матч по регби или футболу, на котором давно мечтали побывать, получаете шанс посетить множество городов, в которых проводятся самые яркие и масштабные мероприятия. Туры, концерты, спортивные турниры и матчи, соревнования, организуемые во всех уголках света, подарят Вам возможность посетить и увидеть изнутри такие мегаполисы как Рим, Барселона, Лондон, Берлин, Москва и, конечно же, Париж. Вы сможете не только стать зрителем и участником проводимых мероприятий, но и ознакомиться с культурой страны, в которой они проводится.
-                     </p>
-                  </div>
+               <div class="steps__pagination">
+                  <div class="steps__step active" data-step-num>Step 1</div>
+                  <div class="steps__step" data-step-num>Step 2</div>
                </div>
-            </div>
-         </div>
-      </section>
-      <!-- ./tabs -->
-      <!-- events -->
-      <section class="events">
-         <div class="container">
-            <div class="events__inner">
-               <div class="events__heading">
-                  <h2 class="events__title">EVENTS 2022</h2>
-                  <ul class="events__list">
-                     <li class="events__item active">
-                        <svg class="events__icon">
-                           <use xlink:href="#best"></use>
-                        </svg>
-                        <span class="events__text">Лучшее</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#culture"></use>
-                        </svg>
-                        <span class="events__text">Культура</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#fashion"></use>
-                        </svg>
-                        <span class="events__text">Мода</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#show"></use>
-                        </svg>
-                        <span class="events__text">Шоу</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#sport"></use>
-                        </svg>
-                        <span class="events__text">Спорт</span>
-                     </li>
-                     <li class="events__item">
-                        <svg class="events__icon">
-                           <use xlink:href="#business"></use>
-                        </svg>
-                        <span class="events__text">Бизнес</span>
-                     </li>
-                  </ul>
+               <div class="steps__wrapp steps__form--first" data-step>
+                  <input type="text" aria-label="Name and Surname" class="steps__input --req" id="name" name="name" placeholder="Name and Surname" autocomplete="name">
+                  <input type="text" aria-label="City" class="steps__input" id="city" name="city" placeholder="City">
+                  <input type="email" aria-label="E-mail" class="steps__input --req" id="email" name="email" placeholder="E-mail" autocomplete="email">
+                  <input type="tel" aria-label="Phone" class="steps__input tel --req" id="phone" name="phone" placeholder="Phone (Messenger)" autocomplete="tel" >
+                  <button type="button" class="steps__btn btn">Continue</button>
                </div>
-               <div class="events-search">
-                  <span class="events-search__suptitle">Поиск по ключевым словам</span>
-                  <div class="events-search__wrapp">
-                     <input type="search" class="events-search__input" placeholder="MTV Europe Music Awards">
-                     <input type="image" class="events-search__btn" src="assets/images/svg/search.svg" alt="Search">
-                  </div>
-               </div>
-               <ul class="events-preview__list">
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Вена</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-1.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-1.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-1.jpg" alt="Венский оперный бал" class="events-preview__img" width="1300" height="869" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#culture"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Венский оперный бал</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Лондон</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-2.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-2.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-2.jpg" alt="Неделя моды в Лондоне" class="events-preview__img" width="1920" height="1080" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#fashion"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Неделя моды в Лондоне</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Ница</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-3.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-3.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-3.jpg" alt="Карнавал в Ницце" class="events-preview__img" width="1200" height="801" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#show"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Карнавал в Ницце</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">ЕС</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-4.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-4.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-4.jpg" alt="Лига Европы" class="events-preview__img" width="1920" height="1080" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#sport"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Лига Европы</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Давос</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-5.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-5.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-5.jpg" alt="Всемирный Экономический Форум" class="events-preview__img" width="2048" height="1236" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#business"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Всемирный Экономический Форум</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Канны</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-6.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-6.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-6.jpg" alt="Каннский фестиваль" class="events-preview__img" width="1200" height="825" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#culture"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Каннский фестиваль</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#global"></use>
-                           </svg>
-                        </span>
-                        <picture>
-                           <source srcset="assets/images/events/events-7.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-7.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-7.jpg" alt="Показ мод Victoria’s Secret" class="events-preview__img" width="1200" height="792" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#fashion"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Показ мод Victoria’s Secret</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">Лос-Анджелес</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-8.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-8.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-8.jpg" alt="Премия Грэмми" class="events-preview__img" width="1936" height="1089" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#culture"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Премия Грэмми</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="event.html" class="events-preview__link">
-                        <span class="events-preview__mark">Доха</span>
-                        <picture>
-                           <source srcset="assets/images/events/events-9.webp" type="image/webp">
-                           <source srcset="assets/images/events/events-9.jpg" type="image/jpeg">
-                           <img src="assets/images/events/events-9.jpg" alt="Катар Мастерс" class="events-preview__img" width="1102" height="733" />
-                       </picture>
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#sport"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Катар Мастерс</h3>
-                        </div>
-                     </a>
-                  </li>
-               </ul>
-               <button type="button" class="events__btn btn">Показать больше</button>
-            </div>
-         </div>
-      </section>
-      <!-- ./events -->
-      <!-- request -->
-      <section class="request">
-         <div class="container">
-            <div class="request__inner">
-               <div class="request__content">
-                  <h2 class="request__title">Узнайте о предстоящих пероприятиях</h2>
-                  <p class="request__text">Не нашли нужное событие или желаете принять участие в ближайшем ивенте? Оставьте заявку и наши специалисты найдут и организуют мероприятие с учетом всех ваших нужд.
+               <div class="steps__wrapp" data-step>
+                  <h1 class="steps__title title">RULES OF ESCORT SERVICES</h1>
+                  <p class="steps__subtitle">Rules of escort services rendering for the Clients</p>
+                  <p class="steps__text">With ordering the escort services at Privately Owned Enterprise “Concierge Group”(further – the Contractor) the private person (further – the Client) assumes the obligations to acquaint himself with these Rules of escort services rendering for the Clients (further – Rules) and follow them thoroughly.
                   </p>
-               </div>
-               <form class="request__form" data-form-request data-form-lang="ru">
-                  <div class="form-alert" data-alert-input>
-                     <p>Заполните обязательные поля</span>
-                     <div class="btn form-alert__btn">Окей</div>
-                  </div>
-                  <div class="request__wrapp">
-                     <input type="text" aria-label="Имя" class="request__input --req" id="requestName" name="name" placeholder="Имя" autocomplete="name">
-                     <input type="tel" aria-label="Телефон" class="request__input tel --req" id="requestPhone" name="phone" placeholder="Телефон" autocomplete="tel">
-                     <input type="email" aria-label="E-mail" class="request__input _email --req" id="requestEmail" name="email" placeholder="E-mail" autocomplete="email">
-                  </div>
+                  <p class="steps__text"> 1. Under escort services (Further – Services, Escort service) the Client and the Contractor shall mean: accompaniment services for Client during the meetings, recreation and at public places.
+                  </p>
+                  <p class="steps__text">2. The Contractor renders services to the Client by means of specially trained and prepared girl (further – Model) who meets customer requirements.
+                  </p>
+                  <p class="steps__text">3. To access to the list of Models and to choose the Model for escort services rendering, the Client shall disposable pay 2 000,00 (two thousand) UAH. Afterwards money will not be returned and will not be included to the escort services cost.
+                  </p>
+                  <p class="steps__text"> 4. Escort services shall be provided to the Client only. It isn't allowed to provide the escort service to the third parties without coordination it with the Contractor.
+                  </p>
+                  <p class="steps__text">5. Escort services shall be rendered directly in volume they were ordered. Volume of the escort services are the time ordered by the Client in hours during which the services shall be provided. The Client has no right to demand from the Model to provide the escort services in bigger volume, than it was approved with the Contractor.
+                  </p>
+                  <p class="steps__text">6. The Payment shall be made by the Client in form of advance payment amounted to 100% of the services cost. Thus the Clients hall pay directly to the Contractor in cash, non-cash or in any other different way, approved by the Contractor. The Client shall not pay to the Model.
+                  </p>
+                  <p class="steps__text">7. The Contractor shall provide the services in compliance with the current legislation of Ukraine. In case when the order received from the Client includes the requirements to make the actions provided by Art. 181-1 of the Code of Ukraine about the administrative violations or the Art. Art. 302, 303 of the Criminal code of Ukraine, namely the requirements to render prostitution, pimping or procurement services, the order will be rejected out of hand.
+                  </p>
+                  <p class="steps__text"> 8. In the course of the escort-services rendering the Client has no right to offer, decline or demand from the Model to provide services, classified by the legislation as prostitution. In case of identification of this rule violation facts, the Contractor reserves the right to instantly stop rendering services for the Client.
+                  </p>
+                  <p class="steps__text">9. The client is obliged to behave in relation to the Model politely, to respect the commonly accepted ethical standards and moral rules. Use of roughness or any kinds of physical impact on the Model is inadmissible. In case of identification of this rule violation facts by the Client, the Contractor reserves the right to instantly stop rendering services for the Client.
+                  </p>
+                  <p class="steps__text">10. The Client is obliged to carryall expenses which the Model require in the course of the escort services rendering, including expenses for taxi, drinks, food, tickets and other expenses.
+                  </p>
+                  <p class="steps__text">11. The Client is liable for any material damage which will be caused to the Model during the escort services rendering.
+                  </p>
+                  <p class="steps__text">12. The escort services rendering can be stopped at any time by the Contractor, without compensation of the paid cost, in case of identification of violation of the Rules and/or the current legislation of Ukraine.
+                  </p>
+                  <p class="steps__text">13. If the Model didn't provide the escort services in complete amount or if they were provided poorly the Client is obliged to report instantly about it to the Contractor by means of telecommunication or e-mail. The Client anyway shall not make any oral claim to the Model.
+                  </p>
+                  <p class="steps__text">14. Information about the Contractor and/or the Model which will become available to the Client in the course of the escort services rendering is confidential. The client undertakes to keep confidentiality of such information. The client is liable for any material and immaterial damage which will be done to the Contractor by the disclosure of such information.
+                  </p>
+                  <p class="steps__text">15. These Rules are obligatory for the Client and the Contractor from the moment of implementation by the Client of the order for the escort services and until the moment of their completion.
+                  </p>
+                  <p class="steps__text">16. Periodically the Contractor can make changes to these Rules by means of the such changes publication at the Contractor's website at the address <a href="http://conciergegroup.org" target="_blank" rel="noopener noreferrer">http://conciergegroup.org</a>.
+                  </p>
+                  <p class="steps__text">17. Further use of the Contractor's services means an unconditional acceptance by the Client of such changes in the Rules.</p>
                   <label class="check">
                      <input class="check__input" type="checkbox" name="checkbox">
                      <span class="check__box"></span>
-                     <span class="check__text">Я соглашаюсь на обработку персональных данных</span>
+                     I have read and agree to the terms
                   </label>
-                  <button type="submit" class="request__btn btn" disabled data-send-btn>Отправить</button>
-               </form>
-            </div>
+                  <div class="steps__btns">
+                     <button type="button" data-previous class="steps__btn btn">Back</button>
+                     <button type="submit" class="steps__btn btn" disabled data-send-btn>Pay for access to the elite dating club - $99</button>
+                  </div>
+               </div>
+            </form>
          </div>
       </section>
-      <!-- ./request -->
+      <!-- ./steps -->
    </main>
    <footer class="footer">
       <div class="container">
@@ -642,34 +314,34 @@
                <nav class="nav">
                   <ul class="nav__list">
                      <li class="nav__item">
-                        <a href="index.html" class="nav__link">Главная</a>
+                        <a href="index.html" class="nav__link">Main</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Услуги и тарифы</a>
+                        <a href="#" class="nav__link">Services and rates</a>
                      </li>
                      <li class="nav__item">
-                        <a href="events.html" class="nav__link">Корпоративное обслуживание</a>
+                        <a href="#" class="nav__link">Corporate service</a>
                      </li>
                      <li class="nav__item">
-                        <a href="event.html" class="nav__link">Команда</a>
+                        <a href="#" class="nav__link">Our team</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Работа у нас</a>
+                        <a href="#" class="nav__link">Career</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Сотрудничество</a>
+                        <a href="#" class="nav__link">Cooperation</a>
                      </li>
                   </ul>
                </nav>
                <ul class="info">
                   <li class="info__link">
-                     <a href="#">Договор публичной оферты</a>
+                     <a href="#">Public offer contract</a>
                   </li>
                   <li class="info__link">
-                     <a href="#">Правила предоставления услуг</a>
+                     <a href="#">Terms of Service</a>
                   </li>
                   <li class="info__link">
-                     <a href="#">Политика конфиденциальности</a>
+                     <a href="#">Privacy Policy</a>
                   </li>
                </ul>
                <span class="license">® 2011-2022, Concierge Group ™</span>
@@ -681,7 +353,7 @@
                <ul class="map__list">
                   <li class="map__item map__item--canada">
                      <a href="#" class="map__link">
-                        Канада
+                        Canada
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -689,7 +361,7 @@
                   </li>
                   <li class="map__item map__item--usa">
                      <a href="#" class="map__link">
-                        Америка
+                        USA
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -697,7 +369,7 @@
                   </li>
                   <li class="map__item map__item--gb">
                      <a href="#" class="map__link">
-                        Великобритания
+                        United Kingdom
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -705,7 +377,7 @@
                   </li>
                   <li class="map__item map__item--finland">
                      <a href="#" class="map__link">
-                        Финляндия
+                        Finland
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -713,7 +385,7 @@
                   </li>
                   <li class="map__item map__item--spanish">
                      <a href="#" class="map__link">
-                        Испания
+                        Spain
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -721,7 +393,7 @@
                   </li>
                   <li class="map__item map__item--peru">
                      <a href="#" class="map__link">
-                        Перу
+                        Peru
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -729,7 +401,7 @@
                   </li>
                   <li class="map__item map__item--brazil">
                      <a href="#" class="map__link">
-                        Бразилия
+                        Brazil
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -737,7 +409,7 @@
                   </li>
                   <li class="map__item map__item--italy">
                      <a href="#" class="map__link">
-                        Италия
+                        Italy
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -745,7 +417,7 @@
                   </li>
                   <li class="map__item map__item--turkish">
                      <a href="#" class="map__link">
-                        Турция
+                        Turkish
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -753,7 +425,7 @@
                   </li>
                   <li class="map__item map__item--saudi-arabia">
                      <a href="#" class="map__link">
-                        Саудовская Аравия
+                        Saudi Arabia
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -761,7 +433,7 @@
                   </li>
                   <li class="map__item map__item--nepal">
                      <a href="#" class="map__link">
-                        Непал
+                        Nepal
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -769,7 +441,7 @@
                   </li>
                   <li class="map__item map__item--japan">
                      <a href="#" class="map__link">
-                        Япония
+                        Japan
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -777,7 +449,7 @@
                   </li>
                   <li class="map__item map__item--south-africa">
                      <a href="#" class="map__link">
-                        Южная Африка
+                        Sourth Africa
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -785,7 +457,7 @@
                   </li>
                   <li class="map__item map__item--india">
                      <a href="#" class="map__link">
-                        Индия
+                        India
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -793,7 +465,7 @@
                   </li>
                   <li class="map__item map__item--thailand">
                      <a href="#" class="map__link">
-                        Таиланд
+                        Thailand
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -801,7 +473,7 @@
                   </li>
                   <li class="map__item map__item--australia">
                      <a href="#" class="map__link">
-                        Австралия
+                        Аustralia
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -849,9 +521,9 @@
             </div>
             <div class="footer-contact">
                <div class="footer-contact__wrapp">
-                  <a href="#" class="footer-contact__link">Контакты</a>
+                  <a href="#" class="footer-contact__link">Contacts</a>
                   <div class="contact__block">
-                     <span class="footer-contact__link footer-contact__link--more more">Больше контактов</span>
+                     <span class="footer-contact__link footer-contact__link--more more">More contacts</span>
                      <ul class="contact__list">
                         <li class="contact__item">
                            <div class="social">
@@ -985,17 +657,17 @@
       <div class="footer__bottom">
          <div class="container">
             <div class="footer__block">
-               <span>Для нас не существует ничего невозможного!</span>
-               <form translate="yes" class="footer-form" data-form-footer data-form-lang="ru">
+               <span>Nothing is impossible for us!</span>
+               <form translate="yes" class="footer-form" data-form-footer data-form-lang="eng">
                   <div class="form-alert" data-alert-input>
-                     <p>Заполните обязательные поля</p>
-                     <div class="btn form-alert__btn">Окей</div>
+                     <p>Fill in the required fields</p>
+                     <div class="btn form-alert__btn">Окey</div>
                   </div>
                   <div class="footer-form__wrapp">
-                     <input type="text" class="footer-form__input --req" name="request" id="request" placeholder="Введите любой запрос!">
-                     <input type="text" class="footer-form__input _email --req" name="Email" autocomplete="email" id="footerEmail" placeholder="Ваш телефон или почта">
+                     <input type="text" class="footer-form__input --req" name="request" id="request" placeholder="Enter any request!">
+                     <input type="email" class="footer-form__input _email --req" name="email" autocomplete="email" id="footerEmail" placeholder="Enter phone or e-mail">
                   </div>
-                  <button type="submit" class="footer-form__btn btn">Отправить</button>
+                  <button type="submit" class="footer-form__btn btn">Send</button>
                </form>
             </div>
          </div>
@@ -1011,16 +683,16 @@
                   <use xlink:href="#cross"></use>
                </svg>
             </button>
-            <form class="modal-window__form" data-form-modal data-form-lang="ru">
+            <form class="modal-window__form" data-form-modal data-form-lang="eng">
                <div class="form-alert" data-alert-input>
-                  <p>Заполните обязательные поля</p>
-                  <div class="btn form-alert__btn">Окей</div>
+                  <p>Fill in the required fields</p>
+                  <div class="btn form-alert__btn">Окey</div>
                </div>
-               <input type="text" aria-label="Имя и Фамилия" class="modal-window__input --req" id="modalName" name="name" placeholder="Имя" autocomplete="name">
+               <input type="text" aria-label="Name and Surname" class="modal-window__input --req" id="modalName" name="name" placeholder="Name and Surname" autocomplete="name">
                <input type="email" aria-label="E-mail" class="modal-window__input _email --req" id="modalEmail" name="email" placeholder="E-mail" autocomplete="email">
-               <input type="tel" aria-label="Телефон" class="modal-window__input tel --req" id="modalPhone" name="phone" placeholder="Телефон" autocomplete="tel">
-               <textarea class="modal-window__message" name="message" id="modalMessage" placeholder="Комментарий"></textarea>
-               <button type="submit" class="modal-window__btn btn">Заказать</button>
+               <input type="tel" aria-label="Телефон" class="modal-window__input tel --req" id="modalPhone" name="phone" placeholder="Phone" autocomplete="tel">
+               <textarea class="modal-window__message" name="message" id="modalMessage" placeholder="Comment"></textarea>
+               <button type="submit" class="modal-window__btn btn">Order</button>
             </form>
          </div>
       </div>
@@ -1869,7 +1541,7 @@
             </filter>
          </defs>
       </symbol>
-      <symbol id="best" viewBox="0 0 33 31">
+      <symbol id="best" viewBox="0 0 32 32">
          <path d="M16 32C7.17733 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 24.8227 24.8227 32 16 32ZM16 1.33333C7.91333 1.33333 1.33333 7.91333 1.33333 16C1.33333 24.0867 7.91333 30.6667 16 30.6667C24.0867 30.6667 30.6667 24.0867 30.6667 16C30.6667 7.91333 24.0867 1.33333 16 1.33333Z" fill="#9F5CC8"/>
          <path d="M23.1599 22.6665H8.83995C8.51461 22.6665 8.23728 22.4318 8.18261 22.1118L6.67595 13.2225C6.63461 12.9745 6.73461 12.7252 6.93461 12.5758C7.13461 12.4265 7.40128 12.3998 7.62795 12.5132L11.9546 14.6465L15.4159 8.34516C15.6493 7.92116 16.3506 7.92116 16.5839 8.34516L20.0453 14.6465L24.3719 12.5132C24.5973 12.3998 24.8653 12.4265 25.0653 12.5758C25.2653 12.7252 25.3666 12.9758 25.3239 13.2225L23.8173 22.1118C23.7626 22.4318 23.4839 22.6665 23.1599 22.6665ZM9.40395 21.3332H22.5973L23.7919 14.2852L20.0639 16.1238C19.7426 16.2838 19.3559 16.1598 19.1853 15.8478L15.9999 10.0505L12.8159 15.8478C12.6453 16.1598 12.2599 16.2838 11.9373 16.1238L8.20928 14.2852L9.40395 21.3332Z" fill="#9F5CC8"/>
       </symbol>

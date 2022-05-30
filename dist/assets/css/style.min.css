@@ -1566,6 +1566,9 @@ textarea {
 .advantages__item--page {
   justify-content: flex-start;
 }
+.advantages__item--page .advantages__text {
+  max-width: 200px;
+}
 .advantages__img {
   margin-bottom: 20px;
   width: 80px;
@@ -2090,6 +2093,7 @@ textarea {
   width: 100%;
   margin-bottom: 5px;
   border-bottom: 1px solid #6F654E;
+  border-radius: 0;
 }
 .events-search__input::placeholder {
   font-size: 1.2rem;
@@ -2399,13 +2403,14 @@ textarea {
 }
 .preview__btn {
   display: none;
-  color: #2DD9FF;
+  color: #704F3B;
   text-decoration: underline;
   text-align: center;
   margin-inline: auto;
 }
 .preview__btn svg {
   transition: 0.1s linear;
+  fill: #704F3B;
 }
 .preview__btn.hide {
   display: none;
@@ -3191,7 +3196,6 @@ textarea {
     gap: 3px;
   }
   .preview__btn svg {
-    fill: #2DD9FF;
     width: 11px;
     height: 11px;
   }
@@ -3289,9 +3293,6 @@ textarea {
   }
   .request__wrapp {
     max-width: 100%;
-  }
-  .request__form.event__form .request__input:last-child {
-    display: none;
   }
   .request__input {
     width: 100%;

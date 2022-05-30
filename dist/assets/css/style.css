@@ -1029,7 +1029,7 @@ textarea {
 .form-alert {
     position: fixed;
     inset: 0;
-    z-index: 100;
+    z-index: 100001;
     margin: auto;
     max-width: 300px;
     width: 100%;
@@ -4180,5 +4180,5 @@ textarea {
 }
 
 ._error {
-    border-color: red;
+    border-color: red !important;
 }

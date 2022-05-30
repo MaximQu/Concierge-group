@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
    <meta charset="UTF-8">
    <!-- Style -->
@@ -37,22 +37,19 @@
    <meta property="og:image:alt" content="Concierge group">
    <meta property="og:description" content="КЛУБ ЭЛИТНЫХ ЗНАКОМСТВ"/>
    <!-- Title -->
-   <title>Відповідь</title>
+   <title>Events</title>
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
    <script src="https://mssg.me/widget/conciergegroup.org" async></script>
    <script src="assets/js/app.js" type="module"></script>
 </head>
 <body>
-   <header class="header">
+   <header class="header page">
       <div class="header__inner">
-         <a href="https://conciergegroup.org" class="logo__link">
+         <a href="index.html" class="logo__link">
             <img src="assets/images/logo/logo.svg" alt="Concierge Group" class="logo__img">
          </a>
-         <span class="header__title">Клуб Елітних Знайомств</span>
-         <div class="header__wrapp">
-            <a href="steps-ua.html" class="header__btn header__btn--page header__btn--yellow btn">Стати учасником клубу</a>
-            <a href="questionnaire-ua.html" class="header__btn header__btn--page btn">Стати моделлю</a>
-         </div>
+         <span class="header__title header__title header__title--page">Event concierge</span>
+         <button class="header__btn btn open-modal" type="button">Book access to the event</button>
          <div class="header-contact">
             <div class="header-contact__links">
                <a href="mailto:info@conciergegroup.org" class="header-contact__link">info@conciergegroup.org</a>
@@ -80,7 +77,7 @@
                   </div>
                </div>
                <div class="contact__block">
-                  <span class="header-contact__link header-contact__link--more more">Більше контактів</span>
+                  <span class="header-contact__link header-contact__link--more more">More contacts</span>
                   <ul class="contact__list">
                      <li class="contact__item">
                         <div class="social">
@@ -234,16 +231,409 @@
       </div>
    </header>
    <main class="main">
-      <!-- answ -->
-      <section class="answ">
+      <!-- hero -->
+      <section class="hero">
          <div class="container">
-            <h1 class="answ__title">Дякуємо за заявку</h1>
-            <p class="answ__text">Ваша анкета перебуває в обробці!</p>
-            <img src="assets/images/svg/check.svg" class="answ__img" alt="Дякуємо">
-            <a href="index-ua.html" class="answ__link btn">Повернутися на головну сторінку</a>
+            <div class="hero__inner">
+               <h1 class="hero__title">EVENT CONCIERGE</h1>
+               <p class="hero__subtitle">tours / concerts / exhibitions / sporting events / forums</p>
+               <div class="slider-events swiper">
+                  <ul class="slider-events__list swiper-wrapper">
+                     <li class="slider-events__item swiper-slide">
+                        <div class="slider-events__wrapp">
+                           <picture>
+                              <source srcset="assets/images/slider/1.1.webp" type="image/webp">
+                              <source srcset="assets/images/slider/1.1.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/1.1.jpg" alt="Exclusive events" width="1680" height="1119" />
+                          </picture>
+                          <picture>
+                              <source srcset="assets/images/slider/1.2.webp" type="image/webp">
+                              <source srcset="assets/images/slider/1.2.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/1.2.jpg" alt="Exclusive events" width="2486" height="1653" />
+                          </picture>
+                          <picture>
+                              <source srcset="assets/images/slider/1.3.webp" type="image/webp">
+                              <source srcset="assets/images/slider/1.3.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/1.3.jpg" alt="Exclusive events" width="3017" height="2012" />
+                          </picture>
+                        </div>
+                        <p class="slider-events__text">Exclusive events with the Consierge Group</p>
+                     </li>
+                     <li class="slider-events__item swiper-slide">
+                        <div class="slider-events__wrapp">
+                           <picture>
+                              <source srcset="assets/images/slider/2.1.webp" type="image/webp">
+                              <source srcset="assets/images/slider/2.1.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/2.1.jpg" alt="Grandiose concerts and exhibitions" width="1600" height="901" />
+                          </picture>
+                          <picture>
+                              <source srcset="assets/images/slider/2.2.webp" type="image/webp">
+                              <source srcset="assets/images/slider/2.2.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/2.2.jpg" alt="Grandiose concerts and exhibitions" width="1600" height="900" />
+                          </picture>
+                          <picture>
+                              <source srcset="assets/images/slider/2.3.webp" type="image/webp">
+                              <source srcset="assets/images/slider/2.3.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/2.3.jpg" alt="Grandiose concerts and exhibitions" width="1200" height="798" />
+                          </picture>
+                        </div>
+                        <p class="slider-events__text">Grandiose concerts and exhibitions around the world</p>
+                     </li>
+                     <li class="slider-events__item swiper-slide">
+                        <div class="slider-events__wrapp">
+                           <picture>
+                              <source srcset="assets/images/slider/3.1.webp" type="image/webp">
+                              <source srcset="assets/images/slider/3.1.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/3.1.jpg" alt="Lots of sports events" width="2850" height="1856" />
+                          </picture>
+                          <picture>
+                              <source srcset="assets/images/slider/3.2.webp" type="image/webp">
+                              <source srcset="assets/images/slider/3.2.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/3.2.jpg" alt="Lots of sports events" width="1200" height="800" />
+                          </picture>
+                          <picture>
+                              <source srcset="assets/images/slider/3.3.webp" type="image/webp">
+                              <source srcset="assets/images/slider/3.3.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/3.3.jpg" alt="Lots of sports events" width="3000" height="2149" />
+                          </picture>
+                        </div>
+                        <p class="slider-events__text">Lots of sports events are waiting for you</p>
+                     </li>
+                     <li class="slider-events__item swiper-slide">
+                        <div class="slider-events__wrapp">
+                           <picture>
+                              <source srcset="assets/images/slider/4.1.webp" type="image/webp">
+                              <source srcset="assets/images/slider/4.1.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/4.1.jpg" alt="National cultural shows" width="1400" height="798" />
+                          </picture>
+                          <picture>
+                              <source srcset="assets/images/slider/4.2.webp" type="image/webp">
+                              <source srcset="assets/images/slider/4.2.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/4.2.jpg" alt="National cultural shows" width="1229" height="819" />
+                          </picture>
+                          <picture>
+                              <source srcset="assets/images/slider/4.3.webp" type="image/webp">
+                              <source srcset="assets/images/slider/4.3.jpg" type="image/jpeg">
+                              <img class="slider-events__img" src="assets/images/slider/4.3.jpg" alt="National cultural shows" width="1920" height="1152" />
+                          </picture>
+                        </div>
+                        <p class="slider-events__text">National cultural shows are breathtaking</p>
+                     </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button__wrapp">
+                     <div class="swiper-button swiper-button-prev">
+                        <svg>
+                           <use xlink:href="#arrow-left"></use>
+                        </svg>
+                     </div>
+                     <div class="swiper-button swiper-button-next">
+                        <svg>
+                           <use xlink:href="#arrow-right"></use>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </section>
-      <!-- ./answ -->
+      <!-- ./hero -->
+      <!-- advantages -->
+      <section class="advantages page">
+         <div class="container">
+            <div class="advantages__inner">
+               <h2 class="advantages__title">Our benefits</h2>
+               <ul class="advantages__list">
+                  <li class="advantages__item advantages__item--page">
+                     <img src="assets/images/advantages/advantages-1.svg" width="58" height="61" alt="
+                     See favorites even when no tickets are available" class="advantages__img">
+                     <p class="advantages__text">See favorites even when no tickets are available</p>
+                  </li>
+                  <li class="advantages__item advantages__item--page">
+                     <img src="assets/images/advantages/advantages-2.svg" width="69" height="69" alt="A chance to attend an international event" class="advantages__img">
+                     <p class="advantages__text">A chance to attend an international event</p>
+                  </li>
+                  <li class="advantages__item advantages__item--page">
+                     <img src="assets/images/advantages/advantages-3.svg" width="78" height="78" alt="Visit many cities with the brightest events" class="advantages__img">
+                     <p class="advantages__text">Visit many cities with the brightest events</p>
+                  </li>
+                  <li class="advantages__item advantages__item--page">
+                     <img src="assets/images/advantages/advantages-4.svg" width="80" height="67" alt="Premium access: red carpet, SkyBox and more." class="advantages__img">
+                     <p class="advantages__text">Premium access: red carpet, SkyBox and more.</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!-- ./advantages -->
+      <!-- tabs -->
+      <section class="tabs">
+         <div class="container">
+            <div class="tabs__body">
+               <ul class="tabs__list">
+                  <li class="tabs__item active" data-item="1">Events</li>
+                  <li class="tabs__item" data-item="2">World Festivals</li>
+                  <li class="tabs__item" data-item="3">Popular destinations</li>
+                  <li class="tabs__item" data-item="4">Events in cities</li>
+               </ul>
+               <div class="tabs__contents">
+                  <div class="tabs__content active" data-content="1">
+                     <p class="tabs__text">Together with the ticket you get a lot of additional bonuses: an opportunity to see your favorite artist or band live, to attend a rugby match or soccer match you've been dreaming of attending, you get a chance to visit many cities, where the brightest and most large-scale events are held. Tours, concerts, sports tournaments and matches, competitions organized in all corners of the world will give you the opportunity to visit and see from the inside such megalopolises as Rome, Barcelona, London, Berlin, and of course, Paris. You can not only become a spectator and participant of the events, but also get acquainted with the culture of the country where they are held. Tickets for yourself and your friends to the most interesting international tournaments, sports matches, exclusive concerts and festivals, and historical events can be found here:
+                     </p>
+                  </div>
+                  <div class="tabs__content" data-content="2">
+                     <p class="tabs__text">Together with the ticket you get a lot of additional bonuses: an opportunity to see your favorite artist or band live, to attend a rugby match or soccer match you've been dreaming of attending, you get a chance to visit many cities, where the brightest and most large-scale events are held. Tours, concerts, sports tournaments and matches, competitions organized in all corners of the world will give you the opportunity to visit and see from the inside such megalopolises as Rome, Barcelona, London, Berlin, and of course, Paris. You can not only become a spectator and participant of the events, but also get acquainted with the culture of the country where they are held. Tickets for yourself and your friends to the most interesting international tournaments, sports matches, exclusive concerts and festivals, and historical events can be found here:
+                     </p>
+                  </div>
+                  <div class="tabs__content" data-content="3">
+                     <p class="tabs__text">Together with the ticket you get a lot of additional bonuses: an opportunity to see your favorite artist or band live, to attend a rugby match or soccer match you've been dreaming of attending, you get a chance to visit many cities, where the brightest and most large-scale events are held. Tours, concerts, sports tournaments and matches, competitions organized in all corners of the world will give you the opportunity to visit and see from the inside such megalopolises as Rome, Barcelona, London, Berlin, and of course, Paris. You can not only become a spectator and participant of the events, but also get acquainted with the culture of the country where they are held. Tickets for yourself and your friends to the most interesting international tournaments, sports matches, exclusive concerts and festivals, and historical events can be found here:
+                     </p>
+                  </div>
+                  <div class="tabs__content" data-content="4">
+                     <p class="tabs__text">Together with the ticket you get a lot of additional bonuses: an opportunity to see your favorite artist or band live, to attend a rugby match or soccer match you've been dreaming of attending, you get a chance to visit many cities, where the brightest and most large-scale events are held. Tours, concerts, sports tournaments and matches, competitions organized in all corners of the world will give you the opportunity to visit and see from the inside such megalopolises as Rome, Barcelona, London, Berlin, and of course, Paris. You can not only become a spectator and participant of the events, but also get acquainted with the culture of the country where they are held. Tickets for yourself and your friends to the most interesting international tournaments, sports matches, exclusive concerts and festivals, and historical events can be found here:
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ./tabs -->
+      <!-- events -->
+      <section class="events">
+         <div class="container">
+            <div class="events__inner">
+               <div class="events__heading">
+                  <h2 class="events__title">EVENTS 2022</h2>
+                  <ul class="events__list">
+                     <li class="events__item active">
+                        <svg class="events__icon">
+                           <use xlink:href="#best"></use>
+                        </svg>
+                        <span class="events__text">The best</span>
+                     </li>
+                     <li class="events__item">
+                        <svg class="events__icon">
+                           <use xlink:href="#culture"></use>
+                        </svg>
+                        <span class="events__text">Culture</span>
+                     </li>
+                     <li class="events__item">
+                        <svg class="events__icon">
+                           <use xlink:href="#fashion"></use>
+                        </svg>
+                        <span class="events__text">Fashion</span>
+                     </li>
+                     <li class="events__item">
+                        <svg class="events__icon">
+                           <use xlink:href="#show"></use>
+                        </svg>
+                        <span class="events__text">Show</span>
+                     </li>
+                     <li class="events__item">
+                        <svg class="events__icon">
+                           <use xlink:href="#sport"></use>
+                        </svg>
+                        <span class="events__text">Sport</span>
+                     </li>
+                     <li class="events__item">
+                        <svg class="events__icon">
+                           <use xlink:href="#business"></use>
+                        </svg>
+                        <span class="events__text">Business</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="events-search">
+                  <span class="events-search__suptitle">Keyword search</span>
+                  <div class="events-search__wrapp">
+                     <input type="search" class="events-search__input" placeholder="MTV Europe Music Awards">
+                     <input type="image" class="events-search__btn" src="assets/images/svg/search.svg" alt="Search">
+                  </div>
+               </div>
+               <ul class="events-preview__list">
+                  <li class="events-preview__item">
+                     <a href="#" class="events-preview__link">
+                        <span class="events-preview__mark">Vienna</span>
+                        <picture>
+                           <source srcset="assets/images/events/events-1.webp" type="image/webp">
+                           <source srcset="assets/images/events/events-1.jpg" type="image/jpeg">
+                           <img src="assets/images/events/events-1.jpg" alt="Vienna Opera Ball" class="events-preview__img" width="1300" height="869" />
+                       </picture>
+                        <div class="events-preview__wrapp">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#culture"></use>
+                           </svg>
+                           <h3 class="events-preview__title">Vienna Opera Ball</h3>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="events-preview__item">
+                     <a href="#" class="events-preview__link">
+                        <span class="events-preview__mark">London</span>
+                        <picture>
+                           <source srcset="assets/images/events/events-2.webp" type="image/webp">
+                           <source srcset="assets/images/events/events-2.jpg" type="image/jpeg">
+                           <img src="assets/images/events/events-2.jpg" alt="London Fashion Week" class="events-preview__img" width="1920" height="1080" />
+                       </picture>
+                        <div class="events-preview__wrapp">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#fashion"></use>
+                           </svg>
+                           <h3 class="events-preview__title">London Fashion Week</h3>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="events-preview__item">
+                     <a href="#" class="events-preview__link">
+                        <span class="events-preview__mark">Nice</span>
+                        <picture>
+                           <source srcset="assets/images/events/events-3.webp" type="image/webp">
+                           <source srcset="assets/images/events/events-3.jpg" type="image/jpeg">
+                           <img src="assets/images/events/events-3.jpg" alt="Carnival in Nice" class="events-preview__img" width="1200" height="801" />
+                       </picture>
+                        <div class="events-preview__wrapp">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#show"></use>
+                           </svg>
+                           <h3 class="events-preview__title">Carnival in Nice</h3>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="events-preview__item">
+                     <a href="#" class="events-preview__link">
+                        <span class="events-preview__mark">ЕС</span>
+                        <picture>
+                           <source srcset="assets/images/events/events-4.webp" type="image/webp">
+                           <source srcset="assets/images/events/events-4.jpg" type="image/jpeg">
+                           <img src="assets/images/events/events-4.jpg" alt="Europa League" class="events-preview__img" width="1920" height="1080" />
+                       </picture>
+                        <div class="events-preview__wrapp">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#sport"></use>
+                           </svg>
+                           <h3 class="events-preview__title">Europa League</h3>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="events-preview__item">
+                     <a href="#" class="events-preview__link">
+                        <span class="events-preview__mark">Davos</span>
+                        <picture>
+                           <source srcset="assets/images/events/events-5.webp" type="image/webp">
+                           <source srcset="assets/images/events/events-5.jpg" type="image/jpeg">
+                           <img src="assets/images/events/events-5.jpg" alt="World economic forum" class="events-preview__img" width="2048" height="1236" />
+                       </picture>
+                        <div class="events-preview__wrapp">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#business"></use>
+                           </svg>
+                           <h3 class="events-preview__title">World economic forum</h3>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="events-preview__item">
+                     <a href="#" class="events-preview__link">
+                        <span class="events-preview__mark">Cannes</span>
+                        <picture>
+                           <source srcset="assets/images/events/events-6.webp" type="image/webp">
+                           <source srcset="assets/images/events/events-6.jpg" type="image/jpeg">
+                           <img src="assets/images/events/events-6.jpg" alt="Cannes Festival" class="events-preview__img" width="1200" height="825" />
+                       </picture>
+                        <div class="events-preview__wrapp">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#culture"></use>
+                           </svg>
+                           <h3 class="events-preview__title">Cannes Festival</h3>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="events-preview__item">
+                     <a href="#" class="events-preview__link">
+                        <span class="events-preview__mark">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#global"></use>
+                           </svg>
+                        </span>
+                        <picture>
+                           <source srcset="assets/images/events/events-7.webp" type="image/webp">
+                           <source srcset="assets/images/events/events-7.jpg" type="image/jpeg">
+                           <img src="assets/images/events/events-7.jpg" alt="Victoria’s Secret Fashion Show" class="events-preview__img" width="1200" height="792" />
+                       </picture>
+                        <div class="events-preview__wrapp">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#fashion"></use>
+                           </svg>
+                           <h3 class="events-preview__title">Victoria’s Secret Fashion Show</h3>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="events-preview__item">
+                     <a href="#" class="events-preview__link">
+                        <span class="events-preview__mark">Los Angeles</span>
+                        <picture>
+                           <source srcset="assets/images/events/events-8.webp" type="image/webp">
+                           <source srcset="assets/images/events/events-8.jpg" type="image/jpeg">
+                           <img src="assets/images/events/events-8.jpg" alt="Grammy Awards" class="events-preview__img" width="1936" height="1089" />
+                       </picture>
+                        <div class="events-preview__wrapp">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#culture"></use>
+                           </svg>
+                           <h3 class="events-preview__title">Grammy Awards</h3>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="events-preview__item">
+                     <a href="event-eng.html" class="events-preview__link">
+                        <span class="events-preview__mark">Doha</span>
+                        <picture>
+                           <source srcset="assets/images/events/events-9.webp" type="image/webp">
+                           <source srcset="assets/images/events/events-9.jpg" type="image/jpeg">
+                           <img src="assets/images/events/events-9.jpg" alt="Qatar Masters" class="events-preview__img" width="1102" height="733" />
+                       </picture>
+                        <div class="events-preview__wrapp">
+                           <svg class="events-preview__icon">
+                              <use xlink:href="#sport"></use>
+                           </svg>
+                           <h3 class="events-preview__title">Qatar Masters</h3>
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+               <button type="button" class="events__btn btn">Show more</button>
+            </div>
+         </div>
+      </section>
+      <!-- ./events -->
+      <!-- request -->
+      <section class="request">
+         <div class="container">
+            <div class="request__inner">
+               <div class="request__content">
+                  <h2 class="request__title">Find out about upcoming events</h2>
+                  <p class="request__text">Can't find the event you need or would like to take part in an upcoming event? Leave a request and our specialists will find and organize an event tailored to all your needs.</p>
+               </div>
+               <form class="request__form" data-form-request data-form-lang="eng">
+                  <div class="form-alert" data-alert-input>
+                     <p>Fill in the required fields</p>
+                     <div class="btn form-alert__btn">Окey</div>
+                  </div>
+                  <div class="request__wrapp">
+                     <input type="text" aria-label="Имя" class="request__input --req" id="requestName" name="name" placeholder="Name" autocomplete="name">
+                     <input type="tel" aria-label="Телефон" class="request__input tel --req" id="requestPhone" name="phone" placeholder="Phone" autocomplete="tel">
+                     <input type="email" aria-label="E-mail" class="request__input _email --req" id="requestEmail" name="email" placeholder="E-mail" autocomplete="email">
+                  </div>
+                  <label class="check">
+                     <input class="check__input" type="checkbox" name="checkbox">
+                     <span class="check__box"></span>
+                     <span class="check__text">I agree to the processing of personal data</span>
+                  </label>
+                  <button type="submit" class="request__btn btn" disabled data-send-btn>Send</button>
+               </form>
+            </div>
+         </div>
+      </section>
+      <!-- ./request -->
    </main>
    <footer class="footer">
       <div class="container">
@@ -252,34 +642,34 @@
                <nav class="nav">
                   <ul class="nav__list">
                      <li class="nav__item">
-                        <a href="index.html" class="nav__link">Головна</a>
+                        <a href="index.html" class="nav__link">Main</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Послуги та тарифи</a>
+                        <a href="#" class="nav__link">Services and rates</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Корпоративне обслуговування</a>
+                        <a href="#" class="nav__link">Corporate service</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Команда</a>
+                        <a href="#" class="nav__link">Our team</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Работа у нас</a>
+                        <a href="#" class="nav__link">Career</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Співпраця</a>
+                        <a href="#" class="nav__link">Cooperation</a>
                      </li>
                   </ul>
                </nav>
                <ul class="info">
                   <li class="info__link">
-                     <a href="#">Договір публічної оферти</a>
+                     <a href="#">Public offer contract</a>
                   </li>
                   <li class="info__link">
-                     <a href="#">Правила надання послуг</a>
+                     <a href="#">Terms of Service</a>
                   </li>
                   <li class="info__link">
-                     <a href="#">Політика конфіденційності</a>
+                     <a href="#">Privacy Policy</a>
                   </li>
                </ul>
                <span class="license">® 2011-2022, Concierge Group ™</span>
@@ -291,7 +681,7 @@
                <ul class="map__list">
                   <li class="map__item map__item--canada">
                      <a href="#" class="map__link">
-                        Канада
+                        Canada
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -299,7 +689,7 @@
                   </li>
                   <li class="map__item map__item--usa">
                      <a href="#" class="map__link">
-                        Америка
+                        USA
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -307,7 +697,7 @@
                   </li>
                   <li class="map__item map__item--gb">
                      <a href="#" class="map__link">
-                        Великобританія
+                        United Kingdom
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -315,7 +705,7 @@
                   </li>
                   <li class="map__item map__item--finland">
                      <a href="#" class="map__link">
-                        Фінляндія
+                        Finland
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -323,7 +713,7 @@
                   </li>
                   <li class="map__item map__item--spanish">
                      <a href="#" class="map__link">
-                        Іспанія
+                        Spain
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -331,7 +721,7 @@
                   </li>
                   <li class="map__item map__item--peru">
                      <a href="#" class="map__link">
-                        Перу
+                        Peru
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -339,7 +729,7 @@
                   </li>
                   <li class="map__item map__item--brazil">
                      <a href="#" class="map__link">
-                        Бразилія
+                        Brazil
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -347,7 +737,7 @@
                   </li>
                   <li class="map__item map__item--italy">
                      <a href="#" class="map__link">
-                        Італія
+                        Italy
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -355,7 +745,7 @@
                   </li>
                   <li class="map__item map__item--turkish">
                      <a href="#" class="map__link">
-                        Турція
+                        Turkish
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -363,7 +753,7 @@
                   </li>
                   <li class="map__item map__item--saudi-arabia">
                      <a href="#" class="map__link">
-                        Саудівская Аравія
+                        Saudi Arabia
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -371,7 +761,7 @@
                   </li>
                   <li class="map__item map__item--nepal">
                      <a href="#" class="map__link">
-                        Непал
+                        Nepal
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -379,7 +769,7 @@
                   </li>
                   <li class="map__item map__item--japan">
                      <a href="#" class="map__link">
-                        Японія
+                        Japan
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -387,7 +777,7 @@
                   </li>
                   <li class="map__item map__item--south-africa">
                      <a href="#" class="map__link">
-                        Південна Африка
+                        Sourth Africa
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -395,7 +785,7 @@
                   </li>
                   <li class="map__item map__item--india">
                      <a href="#" class="map__link">
-                        Індія
+                        India
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -403,7 +793,7 @@
                   </li>
                   <li class="map__item map__item--thailand">
                      <a href="#" class="map__link">
-                        Таіланд
+                        Thailand
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -411,7 +801,7 @@
                   </li>
                   <li class="map__item map__item--australia">
                      <a href="#" class="map__link">
-                        Австралія
+                        Аustralia
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -452,16 +842,16 @@
                      </li>
                   </ul>
                   <div class="rating__wrapp">
-                     <span class="rating__score">TrustScore <strong>4.8</strong></span>
+                     <span class="rating__score">TrustScore <strong>4.8 </strong></span>
                      <span class="rating__reviews">329 reviews</span>
                   </div>
                </div>
             </div>
             <div class="footer-contact">
                <div class="footer-contact__wrapp">
-                  <a href="#" class="footer-contact__link">Контакти</a>
+                  <a href="#" class="footer-contact__link">Contacts</a>
                   <div class="contact__block">
-                     <span class="footer-contact__link footer-contact__link--more more">Більше контактів</span>
+                     <span class="footer-contact__link footer-contact__link--more more">More contacts</span>
                      <ul class="contact__list">
                         <li class="contact__item">
                            <div class="social">
@@ -595,17 +985,17 @@
       <div class="footer__bottom">
          <div class="container">
             <div class="footer__block">
-               <span>Для нас немає нічого неможливого!</span>
-               <form translate="yes" class="footer-form" data-form-footer data-form-lang="ua">
+               <span>Nothing is impossible for us!</span>
+               <form translate="yes" class="footer-form" data-form-footer data-form-lang="eng">
                   <div class="form-alert" data-alert-input>
-                     <p>Заповніть необхідні поля</p>
-                     <div class="btn form-alert__btn">Окей</div>
+                     <p>Fill in the required fields</p>
+                     <div class="btn form-alert__btn">Окey</div>
                   </div>
                   <div class="footer-form__wrapp">
-                     <input type="text" class="footer-form__input --req" name="request" id="request" placeholder="Введіть будь-який запит!">
-                     <input type="text" class="footer-form__input _email --req" name="email" autocomplete="email" id="footerEmail" placeholder="Введіть телефон або e-mail">
+                     <input type="text" class="footer-form__input --req" name="request" id="request" placeholder="Enter any request!">
+                     <input type="email" class="footer-form__input _email --req" name="email" autocomplete="email" id="footerEmail" placeholder="Enter phone or e-mail">
                   </div>
-                  <button type="submit" class="footer-form__btn btn">Надіслати</button>
+                  <button type="submit" class="footer-form__btn btn">Send</button>
                </form>
             </div>
          </div>
@@ -621,16 +1011,16 @@
                   <use xlink:href="#cross"></use>
                </svg>
             </button>
-            <form class="modal-window__form" data-form-modal data-form-lang="ua">
+            <form class="modal-window__form" data-form-modal data-form-lang="eng">
                <div class="form-alert" data-alert-input>
-                  <p>Заповніть необхідні поля</span>
-                  <div class="btn form-alert__btn">Окей</div>
+                  <p>Fill in the required fields</p>
+                  <div class="btn form-alert__btn">Окey</div>
                </div>
-               <input type="text" aria-label="Ім'я та Прізвище" class="modal-window__input --req" id="modalName" name="name" placeholder="Ім'я та Прізвище" autocomplete="name">
+               <input type="text" aria-label="Name and Surname" class="modal-window__input --req" id="modalName" name="name" placeholder="Name and Surname" autocomplete="name">
                <input type="email" aria-label="E-mail" class="modal-window__input _email --req" id="modalEmail" name="email" placeholder="E-mail" autocomplete="email">
-               <input type="tel" aria-label="Телефон" class="modal-window__input tel --req" id="modalPhone" name="phone" placeholder="Телефон" autocomplete="tel">
-               <textarea class="modal-window__message" name="message" id="modalMessage" placeholder="Коментар"></textarea>
-               <button type="submit" class="modal-window__btn btn">Замовити</button>
+               <input type="tel" aria-label="Телефон" class="modal-window__input tel --req" id="modalPhone" name="phone" placeholder="Phone" autocomplete="tel">
+               <textarea class="modal-window__message" name="message" id="modalMessage" placeholder="Comment"></textarea>
+               <button type="submit" class="modal-window__btn btn">Order</button>
             </form>
          </div>
       </div>
@@ -1479,7 +1869,7 @@
             </filter>
          </defs>
       </symbol>
-      <symbol id="best" viewBox="0 0 33 31">
+      <symbol id="best" viewBox="0 0 32 32">
          <path d="M16 32C7.17733 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 24.8227 24.8227 32 16 32ZM16 1.33333C7.91333 1.33333 1.33333 7.91333 1.33333 16C1.33333 24.0867 7.91333 30.6667 16 30.6667C24.0867 30.6667 30.6667 24.0867 30.6667 16C30.6667 7.91333 24.0867 1.33333 16 1.33333Z" fill="#9F5CC8"/>
          <path d="M23.1599 22.6665H8.83995C8.51461 22.6665 8.23728 22.4318 8.18261 22.1118L6.67595 13.2225C6.63461 12.9745 6.73461 12.7252 6.93461 12.5758C7.13461 12.4265 7.40128 12.3998 7.62795 12.5132L11.9546 14.6465L15.4159 8.34516C15.6493 7.92116 16.3506 7.92116 16.5839 8.34516L20.0453 14.6465L24.3719 12.5132C24.5973 12.3998 24.8653 12.4265 25.0653 12.5758C25.2653 12.7252 25.3666 12.9758 25.3239 13.2225L23.8173 22.1118C23.7626 22.4318 23.4839 22.6665 23.1599 22.6665ZM9.40395 21.3332H22.5973L23.7919 14.2852L20.0639 16.1238C19.7426 16.2838 19.3559 16.1598 19.1853 15.8478L15.9999 10.0505L12.8159 15.8478C12.6453 16.1598 12.2599 16.2838 11.9373 16.1238L8.20928 14.2852L9.40395 21.3332Z" fill="#9F5CC8"/>
       </symbol>

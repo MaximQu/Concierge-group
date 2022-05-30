@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="ru" prefix="og: http://ogp.me/ns#">
 <head>
    <meta charset="UTF-8">
    <!-- Style -->
@@ -37,19 +37,22 @@
    <meta property="og:image:alt" content="Concierge group">
    <meta property="og:description" content="КЛУБ ЭЛИТНЫХ ЗНАКОМСТВ"/>
    <!-- Title -->
-   <title>Event</title>
+   <title>Ответ</title>
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
    <script src="https://mssg.me/widget/conciergegroup.org" async></script>
    <script src="assets/js/app.js" type="module"></script>
 </head>
 <body>
-   <header class="header page">
+   <header class="header">
       <div class="header__inner">
-         <a href="index.html" class="logo__link">
+         <a href="https://conciergegroup.org" class="logo__link">
             <img src="assets/images/logo/logo.svg" alt="Concierge Group" class="logo__img">
          </a>
-         <span class="header__title header__title header__title--page">Event concierge</span>
-         <button class="header__btn btn open-modal" type="button">Book access to the event</button>
+         <span class="header__title">Клуб элитных знакомств</span>
+         <div class="header__wrapp">
+            <a href="steps.html" class="header__btn header__btn--page header__btn--yellow btn">Стать участником клуба</a>
+            <a href="questionnaire.html" class="header__btn header__btn--page btn">Стать моделью</a>
+         </div>
          <div class="header-contact">
             <div class="header-contact__links">
                <a href="mailto:info@conciergegroup.org" class="header-contact__link">info@conciergegroup.org</a>
@@ -77,7 +80,7 @@
                   </div>
                </div>
                <div class="contact__block">
-                  <span class="header-contact__link header-contact__link--more more">More contacts</span>
+                  <span class="header-contact__link header-contact__link--more more">Больше контактов</span>
                   <ul class="contact__list">
                      <li class="contact__item">
                         <div class="social">
@@ -231,110 +234,16 @@
       </div>
    </header>
    <main class="main">
-      <!-- preview -->
-      <section class="preview">
+      <!-- answ -->
+      <section class="answ">
          <div class="container">
-            <div class="preview__inner">
-               <div class="preview__block">
-                  <picture>
-                     <source srcset="assets/images/event/dubai-golf.webp" type="image/webp">
-                     <source srcset="assets/images/event/dubai-golf.jpg" type="image/jpeg">
-                     <img src="assets/images/event/dubai-golf.jpg" alt="Dubai World Golf" class="preview__img" width="2400" height="1600" />
-                 </picture>
-                  <span class="preview__name">Dubai World Golf</span>
-               </div>
-               <p class="preview__text">Do you like to spend your holidays in an active, interesting and useful way? Do you prefer a luxurious and expensive holiday? Then a sport like golf is just right for you. And visiting the best courts at Dubai World Golf will not only help you enjoy a good time, but also the beauty of the surroundings, the atmosphere and the privacy.
-               </p>
-               <p class="preview__text">Dubai Golf is owned by Asset Management Group and is one of the world's top golf clubs. Its luxurious world-class golf course and tranquil harbors are some of the world's most beautiful places to play golf and host a variety of events, leisure, recreational and entertainment activities. The owner of these courts, also runs the world's leading golf clubs Dubai-Emirates Golf Club and Dubai Creek Golf & Yacht Club. Also attending these events, which are held at the best golf courses, accompanied by a developed infrastructure, where all who wish to spend their holidays or to devote time to the game of golf, can also visit the gourmet restaurants, golf academies, as well as accommodation in a cozy residential complexes, in comfortable apartments.
-               </p>
-               <p class="preview__text">In order to visit Dubai World Golf - just call us! The Concierge Group company will take care of all the organizational issues and will make sure that your rest or trip will be organized at the highest level!
-               </p>
-               <button type="button" class="preview__btn">Show more...
-                  <svg>
-                     <use xlink:href="#double-arrow"></use>
-                  </svg>
-               </button>
-            </div>
+            <h1 class="answ__title">Спасибо за заявку</h1>
+            <p class="answ__text">Ваша анкета находиться в обработке!</p>
+            <img src="assets/images/svg/check.svg" class="answ__img" alt="Спасибо">
+            <a href="index.html" class="answ__link btn">Вернуться на главную страницу</a>
          </div>
       </section>
-      <!-- ./preview -->
-      <!-- request -->
-      <section class="request page">
-         <div class="container container--fluid">
-            <div class="request__inner">
-               <div class="request__content">
-                  <h2 class="request__title">Leave a request and we will contact you</h2>
-                  <p class="request__text">Interested in attending this event? Enter your name and mobile number and our manager will contact you.</p>
-               </div>
-               <form class="request__form event__form" data-form-request data-form-lang="eng">
-                  <div class="form-alert" data-alert-input>
-                     <p>Fill in the required fields</p>
-                     <div class="btn form-alert__btn">Окey</div>
-                  </div>
-                  <div class="request__wrapp">
-                     <input type="text" aria-label="Имя" class="request__input --req" id="requestName" name="name" placeholder="Name" autocomplete="name">
-                     <input type="tel" aria-label="Телефон" class="request__input tel --req" id="requestPhone" name="phone" placeholder="Phone" autocomplete="tel">
-                     <input type="email" aria-label="E-mail" class="request__input _email --req" id="requestEmail" name="email" placeholder="E-mail" autocomplete="email">
-                  </div>
-                  <label class="check">
-                     <input class="check__input" type="checkbox" name="checkbox">
-                     <span class="check__box"></span>
-                     <span class="check__text">I agree to the processing of personal data</span>
-                  </label>
-                  <button type="submit" class="request__btn btn" disabled data-send-btn>Send</button>
-               </form>
-            </div>
-         </div>
-      </section>
-      <!-- ./request -->
-      <!-- events -->
-      <section class="events page">
-         <div class="container container--fluid">
-            <div class="events__inner">
-               <h2 class="events__title events__title--page">Similar events</h2>
-               <ul class="events-preview__list">
-                  <li class="events-preview__item">
-                     <a href="event.html" class="events-preview__link">
-                        <span class="events-preview__mark">Doha</span>
-                        <img src="assets/images/events/events-9.jpg" alt="Qatar Masters" class="events-preview__img">
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#sport"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Qatar Masters</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="#" class="events-preview__link">
-                        <span class="events-preview__mark">EU</span>
-                        <img src="assets/images/events/events-4.jpg" alt="Europa League" class="events-preview__img">
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#sport"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Europa League</h3>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="events-preview__item">
-                     <a href="event.html" class="events-preview__link">
-                        <span class="events-preview__mark">Doha</span>
-                        <img src="assets/images/events/events-9.jpg" alt="Qatar Masters" class="events-preview__img">
-                        <div class="events-preview__wrapp">
-                           <svg class="events-preview__icon">
-                              <use xlink:href="#sport"></use>
-                           </svg>
-                           <h3 class="events-preview__title">Qatar Masters</h3>
-                        </div>
-                     </a>
-                  </li>
-               </ul>
-               <button type="button" class="events__btn btn">Show more</button>
-            </div>
-         </div>
-      </section>
-      <!-- ./events -->
+      <!-- ./answ -->
    </main>
    <footer class="footer">
       <div class="container">
@@ -343,34 +252,34 @@
                <nav class="nav">
                   <ul class="nav__list">
                      <li class="nav__item">
-                        <a href="index.html" class="nav__link">Main</a>
+                        <a href="index.html" class="nav__link">Главная</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Services and rates</a>
+                        <a href="#" class="nav__link">Услуги и тарифы</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Corporate service</a>
+                        <a href="events.html" class="nav__link">Корпоративное обслуживание</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Our team</a>
+                        <a href="event.html" class="nav__link">Команда</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Career</a>
+                        <a href="#" class="nav__link">Работа у нас</a>
                      </li>
                      <li class="nav__item">
-                        <a href="#" class="nav__link">Cooperation</a>
+                        <a href="#" class="nav__link">Сотрудничество</a>
                      </li>
                   </ul>
                </nav>
                <ul class="info">
                   <li class="info__link">
-                     <a href="#">Public offer contract</a>
+                     <a href="#">Договор публичной оферты</a>
                   </li>
                   <li class="info__link">
-                     <a href="#">Terms of Service</a>
+                     <a href="#">Правила предоставления услуг</a>
                   </li>
                   <li class="info__link">
-                     <a href="#">Privacy Policy</a>
+                     <a href="#">Политика конфиденциальности</a>
                   </li>
                </ul>
                <span class="license">® 2011-2022, Concierge Group ™</span>
@@ -382,7 +291,7 @@
                <ul class="map__list">
                   <li class="map__item map__item--canada">
                      <a href="#" class="map__link">
-                        Canada
+                        Канада
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -390,7 +299,7 @@
                   </li>
                   <li class="map__item map__item--usa">
                      <a href="#" class="map__link">
-                        USA
+                        Америка
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -398,7 +307,7 @@
                   </li>
                   <li class="map__item map__item--gb">
                      <a href="#" class="map__link">
-                        United Kingdom
+                        Великобритания
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -406,7 +315,7 @@
                   </li>
                   <li class="map__item map__item--finland">
                      <a href="#" class="map__link">
-                        Finland
+                        Финляндия
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -414,7 +323,7 @@
                   </li>
                   <li class="map__item map__item--spanish">
                      <a href="#" class="map__link">
-                        Spain
+                        Испания
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -422,7 +331,7 @@
                   </li>
                   <li class="map__item map__item--peru">
                      <a href="#" class="map__link">
-                        Peru
+                        Перу
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -430,7 +339,7 @@
                   </li>
                   <li class="map__item map__item--brazil">
                      <a href="#" class="map__link">
-                        Brazil
+                        Бразилия
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -438,7 +347,7 @@
                   </li>
                   <li class="map__item map__item--italy">
                      <a href="#" class="map__link">
-                        Italy
+                        Италия
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -446,7 +355,7 @@
                   </li>
                   <li class="map__item map__item--turkish">
                      <a href="#" class="map__link">
-                        Turkish
+                        Турция
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -454,7 +363,7 @@
                   </li>
                   <li class="map__item map__item--saudi-arabia">
                      <a href="#" class="map__link">
-                        Saudi Arabia
+                        Саудовская Аравия
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -462,7 +371,7 @@
                   </li>
                   <li class="map__item map__item--nepal">
                      <a href="#" class="map__link">
-                        Nepal
+                        Непал
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -470,7 +379,7 @@
                   </li>
                   <li class="map__item map__item--japan">
                      <a href="#" class="map__link">
-                        Japan
+                        Япония
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -478,7 +387,7 @@
                   </li>
                   <li class="map__item map__item--south-africa">
                      <a href="#" class="map__link">
-                        Sourth Africa
+                        Южная Африка
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -486,7 +395,7 @@
                   </li>
                   <li class="map__item map__item--india">
                      <a href="#" class="map__link">
-                        India
+                        Индия
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -494,7 +403,7 @@
                   </li>
                   <li class="map__item map__item--thailand">
                      <a href="#" class="map__link">
-                        Thailand
+                        Таиланд
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -502,7 +411,7 @@
                   </li>
                   <li class="map__item map__item--australia">
                      <a href="#" class="map__link">
-                        Аustralia
+                        Австралия
                      </a>
                      <svg>
                         <use xlink:href="#dot"></use>
@@ -550,9 +459,9 @@
             </div>
             <div class="footer-contact">
                <div class="footer-contact__wrapp">
-                  <a href="#" class="footer-contact__link">Contacts</a>
+                  <a href="#" class="footer-contact__link">Контакты</a>
                   <div class="contact__block">
-                     <span class="footer-contact__link footer-contact__link--more more">More contacts</span>
+                     <span class="footer-contact__link footer-contact__link--more more">Больше контактов</span>
                      <ul class="contact__list">
                         <li class="contact__item">
                            <div class="social">
@@ -686,17 +595,17 @@
       <div class="footer__bottom">
          <div class="container">
             <div class="footer__block">
-               <span>Nothing is impossible for us!</span>
-               <form translate="yes" class="footer-form" data-form-footer data-form-lang="eng">
+               <span>Для нас не существует ничего невозможного!</span>
+               <form translate="yes" class="footer-form" data-form-footer data-form-lang="ru">
                   <div class="form-alert" data-alert-input>
-                     <p>Fill in the required fields</p>
-                     <div class="btn form-alert__btn">Окey</div>
+                     <p>Заполните обязательные поля</p>
+                     <div class="btn form-alert__btn">Окей</div>
                   </div>
                   <div class="footer-form__wrapp">
-                     <input type="text" class="footer-form__input --req" name="request" id="request" placeholder="Enter any request!">
-                     <input type="email" class="footer-form__input _email --req" name="email" autocomplete="email" id="footerEmail" placeholder="Enter phone or e-mail">
+                     <input type="text" class="footer-form__input --req" name="request" id="request" placeholder="Введите любой запрос!">
+                     <input type="text" class="footer-form__input _email --req" name="Email" autocomplete="email" id="footerEmail" placeholder="Ваш телефон или почта">
                   </div>
-                  <button type="submit" class="footer-form__btn btn">Send</button>
+                  <button type="submit" class="footer-form__btn btn">Отправить</button>
                </form>
             </div>
          </div>
@@ -712,16 +621,16 @@
                   <use xlink:href="#cross"></use>
                </svg>
             </button>
-            <form class="modal-window__form" data-form-modal data-form-lang="eng">
+            <form class="modal-window__form" data-form-modal data-form-lang="ru">
                <div class="form-alert" data-alert-input>
-                  <p>Fill in the required fields</p>
-                  <div class="btn form-alert__btn">Окey</div>
+                  <p>Заполните обязательные поля</p>
+                  <div class="btn form-alert__btn">Окей</div>
                </div>
-               <input type="text" aria-label="Name and Surname" class="modal-window__input --req" id="modalName" name="name" placeholder="Name and Surname" autocomplete="name">
+               <input type="text" aria-label="Имя и Фамилия" class="modal-window__input --req" id="modalName" name="name" placeholder="Имя" autocomplete="name">
                <input type="email" aria-label="E-mail" class="modal-window__input _email --req" id="modalEmail" name="email" placeholder="E-mail" autocomplete="email">
-               <input type="tel" aria-label="Телефон" class="modal-window__input tel --req" id="modalPhone" name="phone" placeholder="Phone" autocomplete="tel">
-               <textarea class="modal-window__message" name="message" id="modalMessage" placeholder="Comment"></textarea>
-               <button type="submit" class="modal-window__btn btn">Order</button>
+               <input type="tel" aria-label="Телефон" class="modal-window__input tel --req" id="modalPhone" name="phone" placeholder="Телефон" autocomplete="tel">
+               <textarea class="modal-window__message" name="message" id="modalMessage" placeholder="Комментарий"></textarea>
+               <button type="submit" class="modal-window__btn btn">Заказать</button>
             </form>
          </div>
       </div>
@@ -1570,7 +1479,7 @@
             </filter>
          </defs>
       </symbol>
-      <symbol id="best" viewBox="0 0 33 31">
+      <symbol id="best" viewBox="0 0 32 32">
          <path d="M16 32C7.17733 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 24.8227 24.8227 32 16 32ZM16 1.33333C7.91333 1.33333 1.33333 7.91333 1.33333 16C1.33333 24.0867 7.91333 30.6667 16 30.6667C24.0867 30.6667 30.6667 24.0867 30.6667 16C30.6667 7.91333 24.0867 1.33333 16 1.33333Z" fill="#9F5CC8"/>
          <path d="M23.1599 22.6665H8.83995C8.51461 22.6665 8.23728 22.4318 8.18261 22.1118L6.67595 13.2225C6.63461 12.9745 6.73461 12.7252 6.93461 12.5758C7.13461 12.4265 7.40128 12.3998 7.62795 12.5132L11.9546 14.6465L15.4159 8.34516C15.6493 7.92116 16.3506 7.92116 16.5839 8.34516L20.0453 14.6465L24.3719 12.5132C24.5973 12.3998 24.8653 12.4265 25.0653 12.5758C25.2653 12.7252 25.3666 12.9758 25.3239 13.2225L23.8173 22.1118C23.7626 22.4318 23.4839 22.6665 23.1599 22.6665ZM9.40395 21.3332H22.5973L23.7919 14.2852L20.0639 16.1238C19.7426 16.2838 19.3559 16.1598 19.1853 15.8478L15.9999 10.0505L12.8159 15.8478C12.6453 16.1598 12.2599 16.2838 11.9373 16.1238L8.20928 14.2852L9.40395 21.3332Z" fill="#9F5CC8"/>
       </symbol>
