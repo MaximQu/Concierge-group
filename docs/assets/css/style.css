@@ -1636,6 +1636,11 @@ textarea {
     margin-bottom: 55px;
 }
 
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
 .slider .swiper-button__wrapp {
     position: absolute;
     top: 0;
@@ -2384,6 +2389,8 @@ textarea {
 
 .slider-events {
     min-height: 360px;
+    position: relative;
+    overflow: hidden;
 }
 
 .slider-events .swiper-button::after {
@@ -3015,6 +3022,8 @@ textarea {
 
 .slider-event {
     margin-bottom: 60px;
+    overflow: hidden;
+    position: relative;
 }
 
 .slider-event .swiper-button::after {
@@ -3875,7 +3884,7 @@ textarea {
     }
 
     .preview .slider-event__item::before {
-        width: 50%;
+        width: 60%;
     }
 
     .footer .nav__list, .footer .info {
