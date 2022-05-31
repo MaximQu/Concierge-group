@@ -2094,6 +2094,7 @@ textarea {
   margin-bottom: 5px;
   border-bottom: 1px solid #6F654E;
   border-radius: 0;
+  padding-left: 5px;
 }
 .events-search__input::placeholder {
   font-size: 1.2rem;
@@ -2204,6 +2205,10 @@ textarea {
 }
 .request.page .request__btn {
   color: #fff;
+}
+.request.page .request__btn[disabled] {
+  color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 .request__inner {
   display: flex;
@@ -2358,6 +2363,7 @@ textarea {
 }
 .tabs__content {
   display: none;
+  transition: 0.1s linear;
 }
 .tabs__content.active {
   display: block;
@@ -3313,6 +3319,9 @@ textarea {
 
   .advantages__text {
     max-width: 220px;
+  }
+  .advantages__item--page .advantages__text {
+    max-width: 280px;
   }
 
   .preview__name {
