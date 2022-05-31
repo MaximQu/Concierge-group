@@ -2173,7 +2173,7 @@ textarea {
 }
 .request.page {
   background-color: transparent;
-  max-width: 880px;
+  max-width: 910px;
   margin-inline: auto;
 }
 .request.page .request__inner {
@@ -2364,6 +2364,7 @@ textarea {
 .tabs__content {
   display: none;
   transition: 0.1s linear;
+  min-height: 180px;
 }
 .tabs__content.active {
   display: block;
@@ -2375,25 +2376,38 @@ textarea {
   margin-inline: auto;
 }
 
-.preview__block {
-  position: relative;
-}
 .preview__img {
-  box-shadow: 0px 4px 12px -3px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
   max-height: 410px;
   width: 100%;
   object-fit: cover;
-  margin-bottom: 60px;
 }
 .preview__name {
   position: absolute;
-  left: 30px;
-  bottom: 60px;
+  left: 15px;
+  bottom: 90px;
   z-index: 1;
-  font-size: clamp(2.73rem, 5.45vw + 1.46rem, 7.2rem);
+  font-size: clamp(2.73rem, 5.45vw + 1.46rem, 3.6rem);
   color: #fff;
   font-weight: 700;
+}
+.preview__info {
+  position: absolute;
+  left: 15px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+.preview__info svg {
+  width: 55px;
+  height: 55px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  object-fit: cover;
 }
 .preview__text {
   max-width: 880px;
@@ -2426,6 +2440,38 @@ textarea {
 }
 .preview__btn:active svg {
   transform: translateY(5px);
+}
+
+.slider-event {
+  margin-bottom: 60px;
+}
+.slider-event .swiper-button::after {
+  display: none;
+}
+.slider-event__item {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.slider-event__item::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.87);
+  height: 100%;
+  width: 45%;
+  opacity: 0.2;
+}
+.slider-event .swiper-button__wrapp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.slider-event .swiper-button__wrapp svg {
+  fill: #FFD75D;
+  height: 50px;
+  width: 25px;
 }
 
 .footer {
@@ -3325,8 +3371,17 @@ textarea {
   }
 
   .preview__name {
-    left: 20px;
-    bottom: 30px;
+    font-size: 3rem;
+    bottom: 60px;
+  }
+  .preview__info {
+    font-size: 2rem;
+    bottom: 10px;
+  }
+  .preview__info svg {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
   }
 
   .footer-contact__wrapp.email {
