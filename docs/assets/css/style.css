@@ -2081,6 +2081,7 @@ textarea {
 
 .questionnaire__photo div {
     position: relative;
+    cursor: pointer;
 }
 
 .questionnaire__photo div::before, .questionnaire__photo div::after {
