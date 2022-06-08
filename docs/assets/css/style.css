@@ -2079,12 +2079,12 @@ textarea {
     padding: 10px;
 }
 
-.questionnaire__photo div {
+.questionnaire__photo .image-wrapp {
     position: relative;
     cursor: pointer;
 }
 
-.questionnaire__photo div::before, .questionnaire__photo div::after {
+.questionnaire__photo .image-wrapp::before, .questionnaire__photo .image-wrapp::after {
     content: "";
     position: absolute;
     z-index: 5;
@@ -2095,12 +2095,12 @@ textarea {
     background-color: #fff;
 }
 
-.questionnaire__photo div::before {
+.questionnaire__photo .image-wrapp::before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-.questionnaire__photo div::after {
+.questionnaire__photo .image-wrapp::after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
