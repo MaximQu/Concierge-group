@@ -1,0 +1,84 @@
+.offer {
+   &__list {
+      display: flex;
+      flex-direction: column;
+      background-color: $light-gray;
+      margin-bottom: 140px;
+      @include shadow-radius;
+   }
+
+   &__item {
+      display: flex;
+      gap: 20px;
+      padding: 70px 75px;
+
+      &:nth-child(odd) {
+         @include shadow-radius;
+         background-color: $white;
+      }
+   }
+
+   &__wrapp {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__img {
+      filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+      border-radius: 8px;
+      width: 100%;
+      object-fit: cover;
+      max-width: 492px;
+   }
+
+   &__title {
+      margin-bottom: 25px;
+   }
+
+   &__text {
+      font-weight: 500;
+      margin-bottom: 80px;
+      text-align: justify;
+      max-width: 345px;
+   }
+
+   &__btn {
+      max-width: 345px;
+      line-height: 1.3em;
+
+      &:hover {
+         background-color: $yellow;
+         color: $black;
+         border-color: transparent;
+      }
+
+      span {
+         max-width: 195px;
+         text-align: center;
+         margin-inline: auto;
+         display: block;
+      }
+   }
+
+   &-individual {
+      padding: 30px 80px;
+      background-color: $beige;
+      @include shadow-radius;
+
+      &__content {
+         display: flex;
+         gap: 20px;
+         margin-bottom: 30px;
+      }
+
+      .offer__btn {
+         max-width: 100%;
+         padding: 18px 20px;
+      }
+
+      .offer__text {
+         margin: auto;
+      }
+   }
+}

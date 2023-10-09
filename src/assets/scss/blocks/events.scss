@@ -1,0 +1,151 @@
+.events {
+   &__heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 50px;
+   }
+   &__title {
+      font-size: 4rem;
+      width: fit-content;
+      color: $brown;
+      border-bottom: 4px solid $beige;
+      margin-bottom: 5px;
+
+      &--page {
+         border: none;
+         color: $black;
+         margin-bottom: 40px;
+      }
+   }
+   &__list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+   }
+   &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      cursor: pointer;
+
+      &.active .events__text {
+         text-decoration: underline;
+      }
+   }
+   &__icon {
+      width: 55px;
+      height: 33px;
+
+   }
+   &__text {
+      text-align: center;
+   }
+
+   &-search {
+      max-width: 680px;
+      margin: 0 auto 50px;
+      padding: 15px 20px;
+      @include shadow-radius;
+      background-color: #F0F0F0;
+      font-size: 1.2rem;
+      color: #A7A7A7;
+
+		&__suptitle {
+         margin-bottom: 10px;
+		}
+		&__wrapp {
+         display: flex;
+         justify-content: space-between;
+         gap: 30px;
+		}
+		&__input {
+         max-width: 575px;
+         width: 100%;
+         margin-bottom: 5px;
+         border-bottom: 1px solid $dark-brown;
+         border-radius: 0;
+         padding-left: 5px;
+
+         &::placeholder {
+            font-size: 1.2rem;
+            color: #666;
+         }
+		}
+		&__btn {
+         padding: 13px;
+         border: 1px solid $dark-brown;
+         border-radius: 7px;
+         transition: .1s linear;
+
+         &:active {
+            transform: scale(.95);
+         }
+		}
+   }
+
+   &-preview {
+      &__list {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 20px;
+         margin-bottom: 50px;
+      }
+      &__item {
+         @include shadow-radius;
+         max-width: 280px;
+         width: 100%;
+         position: relative;
+      }
+      &__mark {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 1rem;
+         font-weight: 500;
+         text-align: center;
+         height: 22px;
+         width: 105px;
+         background-color: rgba($white, .8);
+         border-radius: 8px;
+         position: absolute;
+         top: 7px;
+         left: 7px;
+         z-index: 1;
+
+         svg {
+            width: 15px;
+            height: 15px;
+         }
+      }
+      &__img {
+         height: 175px;
+         object-fit: cover;
+         border-radius: 8px;
+      }
+
+      &__wrapp {
+         display: flex;
+         align-items: center;
+         gap: 15px;
+         padding: 25px 20px;
+      }
+
+      &__icon {
+         width: 32px;
+         height: 32px;
+      }
+      &__title {
+         font-size: 1.5rem;
+         font-weight: 600;
+         max-width: 190px;
+      }
+   }
+
+   &__btn {
+      margin-inline: auto;
+      max-width: 280px;
+   }
+}

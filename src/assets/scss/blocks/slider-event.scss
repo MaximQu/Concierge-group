@@ -1,0 +1,40 @@
+.slider-event {
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+
+  .swiper-button {
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button__wrapp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    svg {
+      fill: $yellow;
+      height: 50px;
+      width: 25px;
+    }
+  }
+
+  &__item {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: rgba($black, 0.87);
+      height: 100%;
+      width: 45%;
+      opacity: 0.2;
+    }
+  }
+}

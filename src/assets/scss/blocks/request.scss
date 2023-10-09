@@ -1,0 +1,130 @@
+.request {
+   background-color: $beige;
+
+   &.page {
+      background-color: transparent;
+      max-width: 910px;
+      margin-inline: auto;
+
+      .request__inner {
+         background-color: $beige;
+         border-radius: 8px;
+         justify-content: space-between;
+         gap: 0;
+      }
+
+      .request__content {
+         padding: 25px 0 25px 20px;
+      }
+
+      .request__form {
+         background-color: $orange;
+         border-radius: 8px;
+         padding: 20px 10px;
+         color: $white;
+
+         .check {
+            color: $white;
+         }
+      }
+
+      .request__title {
+         font-size: 1.8rem;
+      }
+
+      .request__text {
+         max-width: 460px;
+      }
+
+      .request__input {
+         border-color: $white;
+      }
+
+      .request__btn {
+         color: $white;
+
+         &[disabled] {
+            color: rgba($white, .4);
+            border-color: rgba($white, .4);
+         }
+      }
+   }
+
+   &__inner {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px 90px;
+   }
+
+   &__content {
+      max-width: 530px;
+   }
+
+   &__title {
+      margin-bottom: 35px;
+   }
+
+   &__text {
+      font-size: 1.6rem;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   &__wrapp {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 260px;
+   }
+
+   &__input {
+      border-bottom: 1px solid $dark-brown;
+      padding-bottom: 4px;
+      max-width: 120px;
+      width: 100%;
+
+      &:last-child {
+         max-width: 100%;
+      }
+   }
+}
+
+.check {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: $black;
+   font-size: 1rem;
+   font-weight: 400;
+   width: fit-content;
+
+   &__input {
+      position: absolute;
+      -webkit-appearance: none;
+      appearance: none;
+
+      &:checked+.check__box {
+         width: 25px;
+         height: 25px;
+         background: url("../images/svg/check.svg") no-repeat center;
+         border-color: $dark-brown;
+      }
+   }
+
+   &__box {
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      border: 2px solid $dark-brown;
+      cursor: pointer;
+   }
+
+   &__text {
+      max-width: 160px;
+   }
+}

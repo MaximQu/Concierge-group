@@ -1,0 +1,63 @@
+.modal-window {
+   position: fixed;
+   inset: 0;
+   z-index: 100000;
+   height: 100%;
+   width: 100%;
+   display: none;
+   align-items: center;
+   background-color: rgba($brown, .4);
+   backdrop-filter: blur(10px);
+
+   &.active {
+      display: flex;
+   }
+
+   &__overflow {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+   }
+
+   &__body {
+      position: relative;
+      z-index: 5;
+      background-color: #EFEFEF;
+      border-radius: 15px;
+      padding: 40px 60px;
+      max-width: 800px;
+      margin-inline: auto;
+   }
+
+   &__close {
+      margin-left: auto;
+      margin-bottom: 20px;
+      cursor: pointer;
+   }
+
+   &__icon {
+      width: 40px;
+      height: 40px;
+      fill: $black;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+   &__input {
+      width: 100%;
+      border-bottom: 1px solid $brown;
+   }
+   &__message {
+      border: 1px solid $brown;
+      border-radius: 8px;
+      padding: 15px;
+      width: 100%;
+      min-height: 180px;
+   }
+
+}

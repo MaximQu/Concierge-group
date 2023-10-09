@@ -1,0 +1,8 @@
+.container {
+   width: min(calc(100vw - 15px), $container);
+   margin: 0 auto;
+
+   &--fluid {
+      width: min(calc(100vw - 15px), $container-fluid);
+   }
+}

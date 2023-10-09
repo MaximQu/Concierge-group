@@ -1,0 +1,45 @@
+---
+layout: default-ua
+title: Стати моделлю
+---
+<!-- questionnaire -->
+<section class="questionnaire">
+   <div class="container">
+      <h1 class="questionnaire__title">ЗАПОВНИТИ АНКЕТУ</h1>
+      <form id="questionnaire__form" class="questionnaire__form" translate="yes" data-form-model data-form-lang="ua">
+         <div class="form-alert" data-alert-input>
+            <p>Заповніть необхідні поля</span>
+            <div class="btn form-alert__btn">Окей</div>
+         </div>
+         <div class="form-alert" data-alert-img>
+            <p>Виберіть до 9-ти фото</span>
+            <div class="btn form-alert__btn">Окей</div>
+         </div>
+         <div class="questionnaire__content">
+            <div class="questionnaire__wrapp">
+               <input type="text" aria-label="Імя та Прізвище" class="questionnaire__input --req" id="nameSurname" name="name-surname" placeholder="Імя та Прізвище" autocomplete="name">
+               <input type="text" aria-label="Дата нарождення" class="questionnaire__input --req" id="birthday" name="birthday" autocomplete="bday" placeholder="Дата народження(дд-мм-рр)">
+               <input type="text" aria-label="Місто" class="questionnaire__input --req"  id="city" name="city" placeholder="Місто">
+               <input type="text" aria-label="Зріст" class="questionnaire__input --req"  id="height" name="height" placeholder="Зріст">
+               <input type="text" aria-label="Розмір одягу" class="questionnaire__input" id="clothingSize" name="clothing-size" placeholder="Розмір одягу">
+               <input type="text" aria-label="Бюст" class="questionnaire__input" id="breast" name="breast" placeholder="Бюст">
+               <input type="text" aria-label="Колір волосся" class="questionnaire__input" id="hairColor" name="hair-color" placeholder="Колір волосся">
+               <input type="email" aria-label="E-mail" class="questionnaire__input _email --req" id="email" name="email" placeholder="E-mail" autocomplete="email">
+               <input type="tel" aria-label="Телефон" class="questionnaire__input tel --req" id="phone" name="phone" placeholder="Телефон (Мессенджер)" autocomplete="tel">
+            </div>
+            <div class="questionnaire__wrapp">
+               <textarea class="questionnaire__input" name="message" id="message" placeholder="Супровідний лист"></textarea>
+               <div class="questionnaire__block">
+                  <input type="file" id="formImage" class="questionnaire__upload --req" accept="image/png, image/jpeg" value="Choose A Photo" multiple>
+                  <label for="formImage" class="questionnaire__label">Завантажте до 9-ти фото</label>
+                  <div id="formBlock" class="questionnaire__photo">
+                     <div class="image-wrapp"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <button type="submit" class="questionnaire__btn btn">Надіслати анкету</button>
+      </form>
+   </div>
+</section>
+<!-- ./questionnaire -->

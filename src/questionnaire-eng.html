@@ -1,0 +1,45 @@
+---
+layout: default-eng
+title: Become a model
+---
+<!-- questionnaire -->
+<section class="questionnaire">
+   <div class="container">
+      <h1 class="questionnaire__title">FILL IN THE FORM</h1>
+      <form id="questionnaire__form" class="questionnaire__form" translate="yes" data-form-model data-form-lang="eng">
+         <div class="form-alert" data-alert-input>
+            <p>Fill in the required fields</p>
+            <div class="btn form-alert__btn">Окey</div>
+         </div>
+         <div class="form-alert" data-alert-img>
+            <p>Upload up to 9 photos</p>
+            <div class="btn form-alert__btn">Окey</div>
+         </div>
+         <div class="questionnaire__content">
+            <div class="questionnaire__wrapp">
+               <input type="text" aria-label="Name and Surname" class="questionnaire__input --req" id="nameSurname" name="name-surname" placeholder="Name and Surname" autocomplete="name">
+               <input type="text" aria-label="Date of Birth" class="questionnaire__input --req" id="birthday" name="birthday" autocomplete="bday" placeholder="Date of Birth(dd-mm-yy)">
+               <input type="text" aria-label="City" class="questionnaire__input --req" id="city" name="city" placeholder="City">
+               <input type="text" aria-label="Height" class="questionnaire__input --req" id="height" name="height" placeholder="Height">
+               <input type="text" aria-label="Clothing size" class="questionnaire__input" id="clothingSize" name="clothing-size" placeholder="Clothing size">
+               <input type="text" aria-label="Breast" class="questionnaire__input" id="breast" name="breast" placeholder="Breast">
+               <input type="text" aria-label="Hair color" class="questionnaire__input" id="hairColor" name="hair-color" placeholder="Hair color">
+               <input type="email" aria-label="E-mail" class="questionnaire__input _email --req" id="email" name="email" placeholder="E-mail" autocomplete="email">
+               <input type="tel" aria-label="Phone" class="questionnaire__input tel --req" id="phone" name="phone" placeholder="Phone (Messenger)" autocomplete="tel">
+            </div>
+            <div class="questionnaire__wrapp">
+               <textarea class="questionnaire__input" name="message" id="message" placeholder="Cover letter"></textarea>
+               <div class="questionnaire__block">
+                  <input type="file" id="formImage" class="questionnaire__upload --req" accept="image/png, image/jpeg" value="Choose A Photo" multiple>
+                  <label for="formImage" class="questionnaire__label">Upload up to 9 photos</label>
+                  <div id="formBlock" class="questionnaire__photo">
+                     <div class="image-wrapp"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <button type="submit" class="questionnaire__btn btn">Send questionnaire</button>
+      </form>
+   </div>
+</section>
+<!-- ./questionnaire -->

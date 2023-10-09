@@ -1,0 +1,35 @@
+.hero {
+   &__title {
+      position: relative;
+      text-transform: uppercase;
+      text-align: center;
+      max-width: 650px;
+      width: 100%;
+      margin: 0 auto 10px;
+
+      &::before,
+      &::after {
+         content: '';
+         position: absolute;
+         width: 50px;
+         height: 4px;
+         background-color: $brown;
+         top: .5em;
+      }
+
+      &::before {
+         left: -10%;
+      }
+
+      &::after {
+         right: -10%;
+      }
+   }
+
+   &__subtitle {
+      font-family: $ff-2;
+      text-align: center;
+      font-size: 2.3rem;
+      margin-bottom: 55px;
+   }
+}

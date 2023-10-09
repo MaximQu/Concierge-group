@@ -1,0 +1,212 @@
+.steps {
+   &__wrapp {
+      &.hiden {
+         display: none;
+      }
+
+      &.active {
+         animation: slide 250ms 125ms ease-in-out both;
+      }
+
+      animation: fade 250ms 125ms ease-in-out both;
+   }
+
+   &__title {
+      @extend .hero__title;
+      max-width: 440px;
+      margin-bottom: 70px;
+
+      &.title {
+         max-width: 900px;
+         margin-bottom: 30px;
+
+         &::before,
+         &::after {
+            display: none;
+         }
+      }
+   }
+
+   &__subtitle {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 30px;
+   }
+
+   &__pagination {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+   }
+
+   &__step {
+      font-size: 2.3rem;
+      font-weight: 600;
+      padding: 17px 17px;
+      text-decoration: none;
+      background-color: $light-brown;
+      border-top: 3px solid $brown;
+      border-bottom: 3px solid $brown;
+      color: $white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      position: relative;
+
+      &:first-child {
+         border-left: 3px solid $brown;
+         border-bottom-left-radius: 8px;
+         border-top-left-radius: 8px;
+      }
+
+      &:last-child {
+         border-right: 3px solid $brown;
+         border-bottom-right-radius: 8px;
+         border-top-right-radius: 8px;
+      }
+
+      &::before,
+      &::after {
+         position: absolute;
+         top: .35em;
+         right: 25px;
+         bottom: .5em;
+         width: 40px;
+         height: 40px;
+         display: none;
+         align-items: center;
+      }
+
+      &:first-of-type {
+         &::after {
+            content: url('../images/svg/long-arrow-right.svg');
+         }
+      }
+
+      &:last-of-type {
+         &::after {
+            content: url('../images/svg/correct.svg');
+         }
+      }
+
+      &.active {
+         background-color: $brown;
+
+         &::after {
+            display: flex;
+         }
+      }
+   }
+
+   &__form--first {
+      padding: 70px 140px;
+      background: $beige;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      @include shadow-radius;
+   }
+
+   &__input {
+      border-bottom: 1px solid $brown;
+      padding: 10px 5px ;
+      border-radius: 0;
+   }
+
+   &__btns {
+      display: flex;
+      gap: 30px;
+   }
+
+   &__btn {
+      padding: 12px 15px;
+      @extend .questionnaire__btn;
+   }
+
+   &__text {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-align: justify;
+
+      &:not(:last-of-type) {
+         margin-bottom: 25px;
+      }
+
+      a {
+         display: inline;
+         transition: .1s linear;
+
+         &:hover {
+            color: $brown;
+            text-decoration: underline;
+         }
+      }
+   }
+
+   .check {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $black;
+      font-weight: 600;
+      margin: 40px 0;
+      width: fit-content;
+   }
+
+   .check__input {
+      position: absolute;
+      -webkit-appearance: none;
+      appearance: none;
+   }
+
+   .check__box {
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      border: 2px solid $brown;
+      cursor: pointer;
+   }
+
+   .check__input:checked+.check__box {
+      width: 25px;
+      height: 25px;
+      background: url("../images/svg/check.svg") no-repeat center;
+      border-color: $brown;
+   }
+
+}
+
+
+@keyframes slide {
+   0% {
+      transform: translateX(200%);
+      opacity: 0;
+   }
+
+   100% {
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
+
+@keyframes fade {
+   0% {
+      transform: scale(1);
+      opacity: 1;
+   }
+
+   50% {
+      transform: scale(.75);
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 0;
+      transform: scale(0);
+   }
+}

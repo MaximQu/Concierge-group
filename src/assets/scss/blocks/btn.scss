@@ -1,0 +1,30 @@
+.btn {
+   display: block;
+   width: 100%;
+   background-color: transparent;
+   padding: 8px 10px;
+   font-size: 1.5rem;
+   font-weight: 500;
+   line-height: 1.3em;
+   color: $black;
+   border-radius: 5px;
+   border: 1px solid;
+   text-align: center;
+   transition: .1s linear;
+   cursor: pointer;
+
+   &:active:not([disabled]) {
+      transform: scale(.95);
+   }
+
+   &:hover:not([disabled]) {
+      background-color: $yellow;
+      color: $black;
+      border-color: transparent;
+   }
+
+   &[disabled] {
+      border-color: #eee;
+      color: rgba($black, .4);
+   }
+}
